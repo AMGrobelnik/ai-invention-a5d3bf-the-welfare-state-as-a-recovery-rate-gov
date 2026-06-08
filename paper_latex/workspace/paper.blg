@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper.aux
+The style file: plainnat.bst
+Database file #1: references.bib
+Warning--empty booktitle in Boese2021
+Warning--can't use both volume and number fields in Boese2021
+You've used 18 entries,
+            2773 wiz_defined-function locations,
+            732 strings with 8757 characters,
+and the built_in function-call counts, 10950 in all, are:
+= -- 948
+> -- 806
+< -- 20
++ -- 270
+- -- 252
+* -- 944
+:= -- 1687
+add.period$ -- 69
+call.type$ -- 18
+change.case$ -- 135
+chr.to.int$ -- 18
+cite$ -- 38
+duplicate$ -- 436
+empty$ -- 757
+format.name$ -- 282
+if$ -- 2281
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 19
+newline$ -- 113
+num.names$ -- 74
+pop$ -- 270
+preamble$ -- 1
+purify$ -- 120
+quote$ -- 0
+skip$ -- 389
+stack$ -- 0
+substring$ -- 374
+swap$ -- 79
+text.length$ -- 11
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 183
+warning$ -- 2
+while$ -- 81
+width$ -- 0
+write$ -- 271
+(There were 2 warnings)

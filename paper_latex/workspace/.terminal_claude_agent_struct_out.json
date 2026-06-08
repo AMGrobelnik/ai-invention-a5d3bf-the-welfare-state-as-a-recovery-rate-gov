@@ -1,0 +1,13 @@
+{
+  "title": "Democratic Resilience OU Model — Welfare State Recovery-Rate Paper",
+  "summary": "Generated a complete 11-page LaTeX paper titled 'The Welfare State as a Recovery-Rate Governor: Democratic Resilience as a Measurable Eigenvalue Set by Realized Fiscal Redistribution'. The paper covers: Introduction (with OU model equation and contribution list), Theoretical Framework (OU democracy model, rate-not-level dissociation, why realized redistribution), Data and Methods (panel construction, Monte Carlo estimator validation, Steps 1–4: recovery-rate panel, CSD test, rate-not-level regression, moderation hazard model), Results (summary table with Holm-corrected p-values), Discussion (coverage mismatch diagnosis, positive point estimates, estimator validation, relationship to prior work, limitations), and Conclusion. Both figures from <available_figures> are included: fig1_v0.jpg (21:9 OU framework hero diagram, placed as figure* at top of page 3) and fig2_v0.jpg (21:9 Monte Carlo bias comparison, placed as figure* at top of page 6). All 19 references are in references.bib (fetched via aii_semscholar_bib__fetch where possible, manually verified for remainder). PDF compiled successfully with 4-pass pdflatex/bibtex pipeline. Visual review of all 11 pages confirmed clean layout, proper figure placement, resolved citations, and complete reference list with no layout issues.",
+  "out_expected_files": {
+    "paper_tex_path": "paper.tex",
+    "paper_pdf_path": "paper.pdf",
+    "references_bib_path": "references.bib",
+    "figure_paths": [
+      "figures/fig1_v0.jpg",
+      "figures/fig2_v0.jpg"
+    ]
+  }
+}

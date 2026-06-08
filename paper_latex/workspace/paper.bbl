@@ -1,0 +1,142 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Acemoglu and Robinson(2000)]{Acemoglu2000}
+Daron Acemoglu and James~A. Robinson.
+\newblock Why did the west extend the franchise? democracy, inequality, and
+  growth in historical perspective.
+\newblock \emph{Quarterly Journal of Economics}, 115:\penalty0 1167--1199,
+  2000.
+\newblock \doi{10.1162/003355300555042}.
+
+\bibitem[Acemoglu and Robinson(2006)]{Acemoglu2006}
+Daron Acemoglu and James~A. Robinson.
+\newblock \emph{Economic Origins of Dictatorship and Democracy}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem[Andrews(1993)]{Andrews1993}
+Donald W.~K. Andrews.
+\newblock Exactly median-unbiased estimation of first order autoregressive/unit
+  root models.
+\newblock \emph{Econometrica}, 61:\penalty0 139--165, 1993.
+\newblock \doi{10.2307/2951781}.
+
+\bibitem[Boese et~al.(2021)Boese, Edgell, Hellmeier, Maerz, and
+  Lindberg]{Boese2021}
+Vanessa~A. Boese, Amanda~B. Edgell, Sebastian Hellmeier, Seraphine~F. Maerz,
+  and Staffan~I. Lindberg.
+\newblock How democracies prevail: democratic resilience as a two-stage
+  process.
+\newblock volume~28, pages 885--907, 2021.
+\newblock \doi{10.1080/13510347.2020.1853530}.
+
+\bibitem[Carpenter et~al.(2011)Carpenter, Cole, Pace, Batt, Brock, Cline,
+  Coloso, Hodgson, Kitchell, Seekell, Smith, and Weidel]{Carpenter2011}
+S.~Carpenter, J.~Cole, M.~Pace, R.~Batt, W.~Brock, Timothy~J. Cline, J.~Coloso,
+  J.~Hodgson, J.~Kitchell, D.~Seekell, Laura~E. Smith, and B.~Weidel.
+\newblock Early warnings of regime shifts: A whole-ecosystem experiment.
+\newblock In \emph{Science}, volume 332, pages 1079--1082, 2011.
+\newblock \doi{10.1126/science.1203672}.
+
+\bibitem[Dakos et~al.(2008)Dakos, Scheffer, van Nes, Brovkin, Petoukhov, and
+  Held]{Dakos2008}
+V.~Dakos, M.~Scheffer, E.~V. van Nes, V.~Brovkin, V.~Petoukhov, and H.~Held.
+\newblock Slowing down as an early warning signal for abrupt climate change.
+\newblock In \emph{Proceedings of the National Academy of Sciences}, volume
+  105, pages 14308--14312, 2008.
+\newblock \doi{10.1073/pnas.0802430105}.
+
+\bibitem[Dakos et~al.(2012)Dakos, Carpenter, Brock, Ellison, Guttal, Ives,
+  K\'{e}fi, Livina, Seekell, van Nes, and Scheffer]{Dakos2012}
+V.~Dakos, S.~Carpenter, W.~Brock, A.~Ellison, Vishwesha Guttal, A.~Ives,
+  S.~K\'{e}fi, V.~Livina, D.~Seekell, E.~V. van Nes, and M.~Scheffer.
+\newblock Methods for detecting early warnings of critical transitions in time
+  series illustrated using simulated ecological data.
+\newblock In \emph{PLoS ONE}, volume~7, 2012.
+\newblock \doi{10.1371/journal.pone.0041010}.
+
+\bibitem[Emmenegger et~al.(2012)Emmenegger, H\"{a}usermann, Palier, and
+  Seeleib-Kaiser]{Emmenegger2012}
+Patrick Emmenegger, Silia H\"{a}usermann, Bruno Palier, and Martin
+  Seeleib-Kaiser, editors.
+\newblock \emph{The Age of Dualization: The Changing Face of Inequality in
+  Deindustrializing Societies}.
+\newblock Oxford University Press, 2012.
+
+\bibitem[Guttal et~al.(2016)Guttal, Raghavendra, Goel, and Hoarau]{Guttal2016}
+Vishwesha Guttal, Srinivas Raghavendra, Nikunj Goel, and Quentin Hoarau.
+\newblock Lack of critical slowing down suggests that financial meltdowns are
+  not critical transitions, yet rising variability could signal systemic risk.
+\newblock \emph{PLOS ONE}, 11\penalty0 (1), 2016.
+\newblock \doi{10.1371/journal.pone.0144198}.
+
+\bibitem[Kilian(1998)]{Kilian1998}
+L.~Kilian.
+\newblock Small-sample confidence intervals for impulse response functions.
+\newblock \emph{Review of Economics and Statistics}, 80:\penalty0 218--230,
+  1998.
+\newblock \doi{10.1162/003465398557465}.
+
+\bibitem[Kumlin and Stadelmann-Steffen(2014)]{Kumlin2014}
+Staffan Kumlin and Isabelle Stadelmann-Steffen, editors.
+\newblock \emph{How Welfare States Shape the Democratic Public: Policy
+  Feedback, Participation, Voting, and Attitudes}.
+\newblock Edward Elgar, 2014.
+
+\bibitem[Lindvall and Rueda(2014)]{Lindvall2014}
+Johannes Lindvall and David Rueda.
+\newblock The insider--outsider dilemma.
+\newblock \emph{British Journal of Political Science}, 44\penalty0
+  (2):\penalty0 460--475, 2014.
+\newblock \doi{10.1017/S0007123412000598}.
+
+\bibitem[L\"{u}hrmann and Lindberg(2019)]{Luhrmann2019}
+Anna L\"{u}hrmann and Staffan~I. Lindberg.
+\newblock A third wave of autocratization is here: What is new about it?
+\newblock \emph{Democratization}, 26\penalty0 (7):\penalty0 1095--1113, 2019.
+\newblock \doi{10.1080/13510347.2019.1582029}.
+
+\bibitem[Maerz et~al.(2024)Maerz, Edgell, Wilson, Knutsen, and
+  Lindberg]{Maerz2024}
+Seraphine~F. Maerz, Amanda~B. Edgell, Matthew~C. Wilson, Carl~Henrik Knutsen,
+  and Staffan~I. Lindberg.
+\newblock Episodes of regime transformation.
+\newblock \emph{Journal of Peace Research}, 61\penalty0 (1), 2024.
+\newblock \doi{10.1177/00223433231168192}.
+
+\bibitem[Scheffer et~al.(2009)Scheffer, Bascompte, Brock, Brovkin, Carpenter,
+  Dakos, Held, van Nes, Rietkerk, and Sugihara]{Scheffer2009}
+M.~Scheffer, J.~Bascompte, W.~Brock, V.~Brovkin, S.~Carpenter, V.~Dakos,
+  H.~Held, E.~V. van Nes, M.~Rietkerk, and G.~Sugihara.
+\newblock Early-warning signals for critical transitions.
+\newblock In \emph{Nature}, volume 461, pages 53--59, 2009.
+\newblock \doi{10.1038/nature08227}.
+
+\bibitem[Scheffer et~al.(2012)Scheffer, Carpenter, Lenton, Bascompte, Brock,
+  Dakos, van~de Koppel, van~de Leemput, Levin, van Nes, Pascual, and
+  Vandermeer]{Scheffer2012}
+M.~Scheffer, S.~Carpenter, T.~Lenton, J.~Bascompte, W.~Brock, V.~Dakos,
+  J.~van~de Koppel, Ingrid~A. van~de Leemput, S.~Levin, E.~V. van Nes,
+  M.~Pascual, and J.~Vandermeer.
+\newblock Anticipating critical transitions.
+\newblock In \emph{Science}, volume 338, pages 344--348, 2012.
+\newblock \doi{10.1126/science.1225244}.
+
+\bibitem[Solt(2019)]{Solt2019}
+Frederick Solt.
+\newblock Measuring income inequality across countries and over time: The
+  standardized world income inequality database.
+\newblock \emph{Social Science Quarterly}, 2019.
+\newblock \doi{10.1111/ssqu.12795}.
+
+\bibitem[Tan and Cheong(2016)]{Tan2016}
+Ling Tan and Chew~Lim Cheong.
+\newblock Complexity and critical transitions in public opinion.
+\newblock \emph{Social Networks}, 47:\penalty0 144--155, 2016.
+\newblock \doi{10.1016/j.socnet.2016.06.004}.
+
+\end{thebibliography}
