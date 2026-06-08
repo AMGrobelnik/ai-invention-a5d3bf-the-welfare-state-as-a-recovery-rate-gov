@@ -1,0 +1,1028 @@
+{
+  "metadata": {
+    "description": "Democratic resilience country-year panel, 1960-2023",
+    "edi_threshold_for_democracy": 0.5,
+    "sources": {
+      "edi_ldi": "V-Dem via OWID grapher CSV (electoral-democracy-index, liberal-democracy-index)",
+      "ert": "V-Dem ERT GitHub raw CSV or OWID ERT table fallback",
+      "redistribution_swiid": "SWIID (Solt 2020) market-net Gini",
+      "redistribution_owid": "Luxembourg Income Study (OWID) market-disposable Gini difference",
+      "gross_socx": "OECD SOCX or OWID long-run social expenditure",
+      "gdp_pc": "OWID GDP historical (Maddison/WB)",
+      "schooling": "Lee-Lee 2016 / Barro-Lee 2018 via OWID"
+    },
+    "coverage": {
+      "edi": {
+        "n_obs": 11733,
+        "n_countries": 190,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "ldi": {
+        "n_obs": 11649,
+        "n_countries": 190,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "redistribution_owid": {
+        "n_obs": 427,
+        "n_countries": 27,
+        "year_range": [
+          1968,
+          2021
+        ]
+      },
+      "redistribution_swiid": {
+        "n_obs": 2119,
+        "n_countries": 67,
+        "year_range": [
+          1975,
+          2017
+        ]
+      },
+      "redistribution_swiid_se": {
+        "n_obs": 2119,
+        "n_countries": 67,
+        "year_range": [
+          1975,
+          2017
+        ]
+      },
+      "gini_market": {
+        "n_obs": 4875,
+        "n_countries": 166,
+        "year_range": [
+          1960,
+          2017
+        ]
+      },
+      "gini_net": {
+        "n_obs": 4875,
+        "n_countries": 166,
+        "year_range": [
+          1960,
+          2017
+        ]
+      },
+      "gross_socx": {
+        "n_obs": 1786,
+        "n_countries": 42,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "gdp_pc": {
+        "n_obs": 9319,
+        "n_countries": 165,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "schooling": {
+        "n_obs": 5282,
+        "n_countries": 173,
+        "year_range": [
+          1960,
+          2017
+        ]
+      },
+      "ert_onset_gradual": {
+        "n_obs": 59,
+        "n_countries": 47,
+        "year_range": [
+          1966,
+          2023
+        ]
+      },
+      "ert_onset_coup": {
+        "n_obs": 59,
+        "n_countries": 47,
+        "year_range": [
+          1966,
+          2023
+        ]
+      },
+      "democratic_stock": {
+        "n_obs": 11733,
+        "n_countries": 190,
+        "year_range": [
+          1960,
+          2023
+        ]
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "democratic_resilience_panel",
+      "examples": [
+        {
+          "input": "{\"year\": 1960, \"edi\": 0.082, \"ldi\": 0.066, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": 0.22, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "AFG",
+          "metadata_country_code": "AFG",
+          "metadata_year": 1960,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.082
+        },
+        {
+          "input": "{\"year\": 2013, \"edi\": 0.29, \"ldi\": 0.122, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 8830.035156, \"schooling\": 4.9, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "AGO",
+          "metadata_country_code": "AGO",
+          "metadata_year": 2013,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.29
+        },
+        {
+          "input": "{\"year\": 2013, \"edi\": 0.091, \"ldi\": 0.087, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 94039.054688, \"schooling\": 10.3, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "ARE",
+          "metadata_country_code": "ARE",
+          "metadata_year": 2013,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.091
+        },
+        {
+          "input": "{\"year\": 2002, \"edi\": 0.405, \"ldi\": 0.205, \"gini_market\": 51.2, \"gini_net\": 38.3, \"redistribution_swiid\": 12.9, \"redistribution_swiid_se\": 2.9, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 4542.128418, \"schooling\": 10.8, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 5.0}",
+          "output": "ARM",
+          "metadata_country_code": "ARM",
+          "metadata_year": 2002,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 5.0,
+          "metadata_edi": 0.405
+        },
+        {
+          "input": "{\"year\": 1991, \"edi\": 0.856, \"ldi\": 0.779, \"gini_market\": 40.9, \"gini_net\": 25.5, \"redistribution_swiid\": 15.4, \"redistribution_swiid_se\": 2.0, \"redistribution_owid\": null, \"gross_socx\": 23.677, \"gdp_pc\": 31635.179688, \"schooling\": 8.7, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 31.0}",
+          "output": "AUT",
+          "metadata_country_code": "AUT",
+          "metadata_year": 1991,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 31.0,
+          "metadata_edi": 0.856
+        },
+        {
+          "input": "{\"year\": 1980, \"edi\": 0.084, \"ldi\": 0.082, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 941.03833, \"schooling\": 1.09, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "BDI",
+          "metadata_country_code": "BDI",
+          "metadata_year": 1980,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.084
+        },
+        {
+          "input": "{\"year\": 1969, \"edi\": 0.257, \"ldi\": 0.131, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1999.416748, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "BEN",
+          "metadata_country_code": "BEN",
+          "metadata_year": 1969,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.257
+        },
+        {
+          "input": "{\"year\": 2022, \"edi\": 0.275, \"ldi\": 0.224, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2369.528076, \"schooling\": null, \"ert_onset_gradual\": 0.0, \"ert_onset_coup\": 0.0, \"ert_episode_id\": \"Burkina Faso_2022\", \"democratic_stock\": 21.0}",
+          "output": "BFA",
+          "metadata_country_code": "BFA",
+          "metadata_year": 2022,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 21.0,
+          "metadata_edi": 0.275
+        },
+        {
+          "input": "{\"year\": 2011, \"edi\": 0.672, \"ldi\": 0.565, \"gini_market\": 37.1, \"gini_net\": 33.3, \"redistribution_swiid\": 3.8, \"redistribution_swiid_se\": 3.7, \"redistribution_owid\": null, \"gross_socx\": 15.477, \"gdp_pc\": 18928.541016, \"schooling\": 10.7, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 21.0}",
+          "output": "BGR",
+          "metadata_country_code": "BGR",
+          "metadata_year": 2011,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 21.0,
+          "metadata_edi": 0.672
+        },
+        {
+          "input": "{\"year\": 2000, \"edi\": 0.635, \"ldi\": 0.394, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5590.90918, \"schooling\": 7.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 3.0}",
+          "output": "BIH",
+          "metadata_country_code": "BIH",
+          "metadata_year": 2000,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 3.0,
+          "metadata_edi": 0.635
+        },
+        {
+          "input": "{\"year\": 1989, \"edi\": 0.639, \"ldi\": 0.422, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2428.562256, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 3.0}",
+          "output": "BOL",
+          "metadata_country_code": "BOL",
+          "metadata_year": 1989,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 3.0,
+          "metadata_edi": 0.639
+        },
+        {
+          "input": "{\"year\": 1978, \"edi\": 0.738, \"ldi\": 0.624, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 14125.146484, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 18.0}",
+          "output": "BRB",
+          "metadata_country_code": "BRB",
+          "metadata_year": 1978,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 18.0,
+          "metadata_edi": 0.738
+        },
+        {
+          "input": "{\"year\": 1967, \"edi\": 0.594, \"ldi\": 0.483, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 867.208191, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "BWA",
+          "metadata_country_code": "BWA",
+          "metadata_year": 1967,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.594
+        },
+        {
+          "input": "{\"year\": 2020, \"edi\": 0.374, \"ldi\": 0.201, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1116.066895, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "CAF",
+          "metadata_country_code": "CAF",
+          "metadata_year": 2020,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.374
+        },
+        {
+          "input": "{\"year\": 2009, \"edi\": 0.895, \"ldi\": 0.85, \"gini_market\": 40.8, \"gini_net\": 29.6, \"redistribution_swiid\": 11.2, \"redistribution_swiid_se\": 1.1, \"redistribution_owid\": 0.072, \"gross_socx\": 15.222, \"gdp_pc\": 62207.402344, \"schooling\": 13.3, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 49.0}",
+          "output": "CHE",
+          "metadata_country_code": "CHE",
+          "metadata_year": 2009,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 49.0,
+          "metadata_edi": 0.895
+        },
+        {
+          "input": "{\"year\": 1998, \"edi\": 0.102, \"ldi\": 0.069, \"gini_market\": 40.3, \"gini_net\": 37.7, \"redistribution_swiid\": 2.6, \"redistribution_swiid_se\": 1.9, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 4048.396973, \"schooling\": 6.2, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "CHN",
+          "metadata_country_code": "CHN",
+          "metadata_year": 1998,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.102
+        },
+        {
+          "input": "{\"year\": 1988, \"edi\": 0.179, \"ldi\": 0.101, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 3317.345947, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "CMR",
+          "metadata_country_code": "CMR",
+          "metadata_year": 1988,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.179
+        },
+        {
+          "input": "{\"year\": 1977, \"edi\": 0.09, \"ldi\": 0.024, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1863.287109, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "COG",
+          "metadata_country_code": "COG",
+          "metadata_year": 1977,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.09
+        },
+        {
+          "input": "{\"year\": 1966, \"edi\": 0.117, \"ldi\": 0.059, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2874.785156, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "COM",
+          "metadata_country_code": "COM",
+          "metadata_year": 1966,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.117
+        },
+        {
+          "input": "{\"year\": 2019, \"edi\": 0.79, \"ldi\": 0.707, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 9784.964844, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 28.0}",
+          "output": "CPV",
+          "metadata_country_code": "CPV",
+          "metadata_year": 2019,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 28.0,
+          "metadata_edi": 0.79
+        },
+        {
+          "input": "{\"year\": 2008, \"edi\": 0.105, \"ldi\": 0.039, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": 10.6, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "CUB",
+          "metadata_country_code": "CUB",
+          "metadata_year": 2008,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.105
+        },
+        {
+          "input": "{\"year\": 1997, \"edi\": 0.891, \"ldi\": 0.816, \"gini_market\": 43.3, \"gini_net\": 24.9, \"redistribution_swiid\": 18.4, \"redistribution_swiid_se\": 1.2, \"redistribution_owid\": null, \"gross_socx\": 16.628, \"gdp_pc\": 25260.59375, \"schooling\": 9.9, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 7.0}",
+          "output": "CZE",
+          "metadata_country_code": "CZE",
+          "metadata_year": 1997,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 7.0,
+          "metadata_edi": 0.891
+        },
+        {
+          "input": "{\"year\": 2017, \"edi\": 0.243, \"ldi\": 0.11, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 4997.424316, \"schooling\": 4.1, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "DJI",
+          "metadata_country_code": "DJI",
+          "metadata_year": 2017,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.243
+        },
+        {
+          "input": "{\"year\": 2006, \"edi\": 0.644, \"ldi\": 0.378, \"gini_market\": 51.1, \"gini_net\": 49.7, \"redistribution_swiid\": 1.4, \"redistribution_swiid_se\": 1.3, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 11356.134766, \"schooling\": 7.1, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 18.0}",
+          "output": "DOM",
+          "metadata_country_code": "DOM",
+          "metadata_year": 2006,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 18.0,
+          "metadata_edi": 0.644
+        },
+        {
+          "input": "{\"year\": 1995, \"edi\": 0.699, \"ldi\": 0.45, \"gini_market\": 50.1, \"gini_net\": 49.0, \"redistribution_swiid\": 1.1, \"redistribution_swiid_se\": 3.4, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5994.284668, \"schooling\": 6.9, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 15.0}",
+          "output": "ECU",
+          "metadata_country_code": "ECU",
+          "metadata_year": 1995,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 15.0,
+          "metadata_edi": 0.699
+        },
+        {
+          "input": "{\"year\": 1984, \"edi\": 0.073, \"ldi\": 0.009, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "ERI",
+          "metadata_country_code": "ERI",
+          "metadata_year": 1984,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.073
+        },
+        {
+          "input": "{\"year\": 1973, \"edi\": 0.108, \"ldi\": 0.025, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "EST",
+          "metadata_country_code": "EST",
+          "metadata_year": 1973,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.108
+        },
+        {
+          "input": "{\"year\": 1962, \"edi\": 0.805, \"ldi\": 0.758, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 8.901161, \"gdp_pc\": 12291.749023, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 2.0}",
+          "output": "FIN",
+          "metadata_country_code": "FIN",
+          "metadata_year": 1962,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 2.0,
+          "metadata_edi": 0.805
+        },
+        {
+          "input": "{\"year\": 2015, \"edi\": 0.385, \"ldi\": 0.27, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 13284.6875, \"schooling\": 10.8, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 27.0}",
+          "output": "FJI",
+          "metadata_country_code": "FJI",
+          "metadata_year": 2015,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 27.0,
+          "metadata_edi": 0.385
+        },
+        {
+          "input": "{\"year\": 2004, \"edi\": 0.344, \"ldi\": 0.202, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 14452.536133, \"schooling\": 6.8, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "GAB",
+          "metadata_country_code": "GAB",
+          "metadata_year": 2004,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.344
+        },
+        {
+          "input": "{\"year\": 1993, \"edi\": 0.356, \"ldi\": 0.158, \"gini_market\": 46.4, \"gini_net\": 37.1, \"redistribution_swiid\": 9.3, \"redistribution_swiid_se\": 2.8, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 3014.38623, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "GEO",
+          "metadata_country_code": "GEO",
+          "metadata_year": 1993,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.356
+        },
+        {
+          "input": "{\"year\": 1982, \"edi\": 0.143, \"ldi\": 0.037, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 3362.627686, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "GIN",
+          "metadata_country_code": "GIN",
+          "metadata_year": 1982,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.143
+        },
+        {
+          "input": "{\"year\": 1971, \"edi\": 0.012, \"ldi\": 0.012, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "GNB",
+          "metadata_country_code": "GNB",
+          "metadata_year": 1971,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.012
+        },
+        {
+          "input": "{\"year\": 1960, \"edi\": 0.389, \"ldi\": 0.308, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 6.183009, \"gdp_pc\": 5760.675781, \"schooling\": 6.86, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "GRC",
+          "metadata_country_code": "GRC",
+          "metadata_year": 1960,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.389
+        },
+        {
+          "input": "{\"year\": 2013, \"edi\": 0.574, \"ldi\": 0.41, \"gini_market\": 45.2, \"gini_net\": 43.3, \"redistribution_swiid\": 1.9, \"redistribution_swiid_se\": 1.5, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 8266.880859, \"schooling\": 4.7, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 13.0}",
+          "output": "GTM",
+          "metadata_country_code": "GTM",
+          "metadata_year": 2013,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 13.0,
+          "metadata_edi": 0.574
+        },
+        {
+          "input": "{\"year\": 2002, \"edi\": 0.372, \"ldi\": 0.325, \"gini_market\": 45.2, \"gini_net\": 40.4, \"redistribution_swiid\": 4.8, \"redistribution_swiid_se\": 3.5, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 44125.992188, \"schooling\": 9.5, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "HKG",
+          "metadata_country_code": "HKG",
+          "metadata_year": 2002,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.372
+        },
+        {
+          "input": "{\"year\": 1991, \"edi\": 0.242, \"ldi\": 0.16, \"gini_market\": 42.3, \"gini_net\": 28.0, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 11813.045898, \"schooling\": 6.3, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "HRV",
+          "metadata_country_code": "HRV",
+          "metadata_year": 1991,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.242
+        },
+        {
+          "input": "{\"year\": 1980, \"edi\": 0.134, \"ldi\": 0.1, \"gini_market\": 42.8, \"gini_net\": 23.1, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 12910.199219, \"schooling\": 8.69, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "HUN",
+          "metadata_country_code": "HUN",
+          "metadata_year": 1980,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.134
+        },
+        {
+          "input": "{\"year\": 1969, \"edi\": 0.665, \"ldi\": 0.506, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1611.097412, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 9.0}",
+          "output": "IND",
+          "metadata_country_code": "IND",
+          "metadata_year": 1969,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 9.0,
+          "metadata_edi": 0.665
+        },
+        {
+          "input": "{\"year\": 2022, \"edi\": 0.892, \"ldi\": 0.827, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 12.068, \"gdp_pc\": 128551.921875, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 62.0}",
+          "output": "IRL",
+          "metadata_country_code": "IRL",
+          "metadata_year": 2022,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 62.0,
+          "metadata_edi": 0.892
+        },
+        {
+          "input": "{\"year\": 2011, \"edi\": 0.413, \"ldi\": 0.251, \"gini_market\": 35.0, \"gini_net\": 31.6, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 16555.523438, \"schooling\": 6.6, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "IRQ",
+          "metadata_country_code": "IRQ",
+          "metadata_year": 2011,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.413
+        },
+        {
+          "input": "{\"year\": 2000, \"edi\": 0.768, \"ldi\": 0.693, \"gini_market\": 51.2, \"gini_net\": 34.7, \"redistribution_swiid\": 16.5, \"redistribution_swiid_se\": 1.4, \"redistribution_owid\": null, \"gross_socx\": 16.027, \"gdp_pc\": 40550.566406, \"schooling\": 12.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 40.0}",
+          "output": "ISR",
+          "metadata_country_code": "ISR",
+          "metadata_year": 2000,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 40.0,
+          "metadata_edi": 0.768
+        },
+        {
+          "input": "{\"year\": 1989, \"edi\": 0.56, \"ldi\": 0.431, \"gini_market\": 54.2, \"gini_net\": 54.7, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5672.894531, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 22.0}",
+          "output": "JAM",
+          "metadata_country_code": "JAM",
+          "metadata_year": 1989,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 22.0,
+          "metadata_edi": 0.56
+        },
+        {
+          "input": "{\"year\": 1978, \"edi\": 0.838, \"ldi\": 0.752, \"gini_market\": 35.7, \"gini_net\": 24.4, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 9.225517, \"gdp_pc\": 22144.402344, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 18.0}",
+          "output": "JPN",
+          "metadata_country_code": "JPN",
+          "metadata_year": 1978,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 18.0,
+          "metadata_edi": 0.838
+        },
+        {
+          "input": "{\"year\": 1967, \"edi\": 0.219, \"ldi\": 0.141, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2560.403809, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "KEN",
+          "metadata_country_code": "KEN",
+          "metadata_year": 1967,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.219
+        },
+        {
+          "input": "{\"year\": 2020, \"edi\": 0.385, \"ldi\": 0.255, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5567.188965, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "KGZ",
+          "metadata_country_code": "KGZ",
+          "metadata_year": 2020,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.385
+        },
+        {
+          "input": "{\"year\": 2009, \"edi\": 0.759, \"ldi\": 0.662, \"gini_market\": 34.3, \"gini_net\": 31.3, \"redistribution_swiid\": 3.0, \"redistribution_swiid_se\": 0.8, \"redistribution_owid\": null, \"gross_socx\": 7.589, \"gdp_pc\": 39336.070312, \"schooling\": 11.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 21.0}",
+          "output": "KOR",
+          "metadata_country_code": "KOR",
+          "metadata_year": 2009,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 21.0,
+          "metadata_edi": 0.759
+        },
+        {
+          "input": "{\"year\": 1998, \"edi\": 0.087, \"ldi\": 0.087, \"gini_market\": 37.9, \"gini_net\": 34.0, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1845.130981, \"schooling\": 3.8, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "LAO",
+          "metadata_country_code": "LAO",
+          "metadata_year": 1998,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.087
+        },
+        {
+          "input": "{\"year\": 1987, \"edi\": 0.235, \"ldi\": 0.13, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1640.984131, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "LBR",
+          "metadata_country_code": "LBR",
+          "metadata_year": 1987,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.235
+        },
+        {
+          "input": "{\"year\": 1976, \"edi\": 0.59, \"ldi\": 0.433, \"gini_market\": 41.7, \"gini_net\": 40.5, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 3418.442139, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 16.0}",
+          "output": "LKA",
+          "metadata_country_code": "LKA",
+          "metadata_year": 1976,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 16.0,
+          "metadata_edi": 0.59
+        },
+        {
+          "input": "{\"year\": 1965, \"edi\": 0.092, \"ldi\": 0.023, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": 4.61, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "LTU",
+          "metadata_country_code": "LTU",
+          "metadata_year": 1965,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.092
+        },
+        {
+          "input": "{\"year\": 2018, \"edi\": 0.874, \"ldi\": 0.793, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": 0.169, \"gross_socx\": 20.836, \"gdp_pc\": 116679.960938, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 58.0}",
+          "output": "LUX",
+          "metadata_country_code": "LUX",
+          "metadata_year": 2018,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 58.0,
+          "metadata_edi": 0.874
+        },
+        {
+          "input": "{\"year\": 2007, \"edi\": 0.258, \"ldi\": 0.227, \"gini_market\": 44.8, \"gini_net\": 40.1, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5829.385742, \"schooling\": 4.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MAR",
+          "metadata_country_code": "MAR",
+          "metadata_year": 2007,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.258
+        },
+        {
+          "input": "{\"year\": 1996, \"edi\": 0.548, \"ldi\": 0.351, \"gini_market\": 48.1, \"gini_net\": 43.1, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1227.721313, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 2.0}",
+          "output": "MDG",
+          "metadata_country_code": "MDG",
+          "metadata_year": 1996,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 2.0,
+          "metadata_edi": 0.548
+        },
+        {
+          "input": "{\"year\": 1985, \"edi\": 0.32, \"ldi\": 0.142, \"gini_market\": 44.9, \"gini_net\": 45.4, \"redistribution_swiid\": -0.5, \"redistribution_swiid_se\": 2.0, \"redistribution_owid\": null, \"gross_socx\": 1.856, \"gdp_pc\": 15443.044922, \"schooling\": 4.8, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MEX",
+          "metadata_country_code": "MEX",
+          "metadata_year": 1985,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.32
+        },
+        {
+          "input": "{\"year\": 1974, \"edi\": 0.104, \"ldi\": 0.097, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 553.164673, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MLI",
+          "metadata_country_code": "MLI",
+          "metadata_year": 1974,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.104
+        },
+        {
+          "input": "{\"year\": 1963, \"edi\": 0.077, \"ldi\": 0.018, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 784.830505, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MMR",
+          "metadata_country_code": "MMR",
+          "metadata_year": 1963,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.077
+        },
+        {
+          "input": "{\"year\": 1990, \"edi\": 0.372, \"ldi\": 0.235, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 4221.740723, \"schooling\": 7.69, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MNG",
+          "metadata_country_code": "MNG",
+          "metadata_year": 1990,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.372
+        },
+        {
+          "input": "{\"year\": 1979, \"edi\": 0.094, \"ldi\": 0.043, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 4745.053223, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MRT",
+          "metadata_country_code": "MRT",
+          "metadata_year": 1979,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.094
+        },
+        {
+          "input": "{\"year\": 1968, \"edi\": 0.211, \"ldi\": 0.086, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1198.60791, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MWI",
+          "metadata_country_code": "MWI",
+          "metadata_year": 1968,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.211
+        },
+        {
+          "input": "{\"year\": 2021, \"edi\": 0.432, \"ldi\": 0.3, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 29839.699219, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "MYS",
+          "metadata_country_code": "MYS",
+          "metadata_year": 2021,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.432
+        },
+        {
+          "input": "{\"year\": 2010, \"edi\": 0.265, \"ldi\": 0.185, \"gini_market\": 40.6, \"gini_net\": 36.7, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1194.922485, \"schooling\": 1.4, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 12.0}",
+          "output": "NER",
+          "metadata_country_code": "NER",
+          "metadata_year": 2010,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 12.0,
+          "metadata_edi": 0.265
+        },
+        {
+          "input": "{\"year\": 1999, \"edi\": 0.597, \"ldi\": 0.383, \"gini_market\": 52.7, \"gini_net\": 48.8, \"redistribution_swiid\": 3.9, \"redistribution_swiid_se\": 2.7, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 4131.805664, \"schooling\": 5.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 9.0}",
+          "output": "NIC",
+          "metadata_country_code": "NIC",
+          "metadata_year": 1999,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 9.0,
+          "metadata_edi": 0.597
+        },
+        {
+          "input": "{\"year\": 1988, \"edi\": 0.865, \"ldi\": 0.83, \"gini_market\": 36.9, \"gini_net\": 21.7, \"redistribution_swiid\": 15.2, \"redistribution_swiid_se\": 1.1, \"redistribution_owid\": null, \"gross_socx\": 19.971001, \"gdp_pc\": 30526.761719, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 28.0}",
+          "output": "NOR",
+          "metadata_country_code": "NOR",
+          "metadata_year": 1988,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 28.0,
+          "metadata_edi": 0.865
+        },
+        {
+          "input": "{\"year\": 1977, \"edi\": 0.847, \"ldi\": 0.773, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 15.336157, \"gdp_pc\": 20286.986328, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 17.0}",
+          "output": "NZL",
+          "metadata_country_code": "NZL",
+          "metadata_year": 1977,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 17.0,
+          "metadata_edi": 0.847
+        },
+        {
+          "input": "{\"year\": 1966, \"edi\": 0.177963, \"ldi\": 0.12037, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "OWID_AFR",
+          "metadata_country_code": "OWID_AFR",
+          "metadata_year": 1966,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.177963
+        },
+        {
+          "input": "{\"year\": 2019, \"edi\": 0.359082, \"ldi\": 0.261143, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "OWID_ASI",
+          "metadata_country_code": "OWID_ASI",
+          "metadata_year": 2019,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.359082
+        },
+        {
+          "input": "{\"year\": 1961, \"edi\": 0.835, \"ldi\": 0.789, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 1.0}",
+          "output": "OWID_GFR",
+          "metadata_country_code": "OWID_GFR",
+          "metadata_year": 1961,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 1.0,
+          "metadata_edi": 0.835
+        },
+        {
+          "input": "{\"year\": 2022, \"edi\": 0.595067, \"ldi\": 0.452467, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 32.0}",
+          "output": "OWID_NAM",
+          "metadata_country_code": "OWID_NAM",
+          "metadata_year": 2022,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 32.0,
+          "metadata_edi": 0.595067
+        },
+        {
+          "input": "{\"year\": 1995, \"edi\": 0.678, \"ldi\": 0.527, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 8.0}",
+          "output": "OWID_SAM",
+          "metadata_country_code": "OWID_SAM",
+          "metadata_year": 1995,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 8.0,
+          "metadata_edi": 0.678
+        },
+        {
+          "input": "{\"year\": 2015, \"edi\": 0.522419, \"ldi\": 0.406821, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 13.0}",
+          "output": "OWID_WRL",
+          "metadata_country_code": "OWID_WRL",
+          "metadata_year": 2015,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 13.0,
+          "metadata_edi": 0.522419
+        },
+        {
+          "input": "{\"year\": 2006, \"edi\": 0.296, \"ldi\": 0.227, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "OWID_ZAN",
+          "metadata_country_code": "OWID_ZAN",
+          "metadata_year": 2006,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.296
+        },
+        {
+          "input": "{\"year\": 1995, \"edi\": 0.711, \"ldi\": 0.534, \"gini_market\": 54.3, \"gini_net\": 49.9, \"redistribution_swiid\": 4.4, \"redistribution_swiid_se\": 1.3, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 8683.837891, \"schooling\": 8.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 4.0}",
+          "output": "PAN",
+          "metadata_country_code": "PAN",
+          "metadata_year": 1995,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 4.0,
+          "metadata_edi": 0.711
+        },
+        {
+          "input": "{\"year\": 1984, \"edi\": 0.179, \"ldi\": 0.062, \"gini_market\": 47.8, \"gini_net\": 42.9, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 3532.0271, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "PHL",
+          "metadata_country_code": "PHL",
+          "metadata_year": 1984,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.179
+        },
+        {
+          "input": "{\"year\": 1973, \"edi\": 0.191, \"ldi\": 0.134, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 7414.041016, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "POL",
+          "metadata_country_code": "POL",
+          "metadata_year": 1973,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.191
+        },
+        {
+          "input": "{\"year\": 1962, \"edi\": 0.128, \"ldi\": 0.074, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5764.242676, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "PRT",
+          "metadata_country_code": "PRT",
+          "metadata_year": 1962,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.128
+        },
+        {
+          "input": "{\"year\": 2015, \"edi\": 0.593, \"ldi\": 0.416, \"gini_market\": 46.1, \"gini_net\": 44.9, \"redistribution_swiid\": 1.2, \"redistribution_swiid_se\": 1.0, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 14232.930664, \"schooling\": 8.5, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 22.0}",
+          "output": "PRY",
+          "metadata_country_code": "PRY",
+          "metadata_year": 2015,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 22.0,
+          "metadata_edi": 0.593
+        },
+        {
+          "input": "{\"year\": 2004, \"edi\": 0.592, \"ldi\": 0.435, \"gini_market\": 43.5, \"gini_net\": 32.3, \"redistribution_swiid\": 11.2, \"redistribution_swiid_se\": 1.8, \"redistribution_owid\": null, \"gross_socx\": 9.561, \"gdp_pc\": 11699.962891, \"schooling\": 9.9, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 14.0}",
+          "output": "ROU",
+          "metadata_country_code": "ROU",
+          "metadata_year": 2004,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 14.0,
+          "metadata_edi": 0.592
+        },
+        {
+          "input": "{\"year\": 1993, \"edi\": 0.187, \"ldi\": 0.129, \"gini_market\": 46.5, \"gini_net\": 41.8, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 928.539917, \"schooling\": 1.9, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "RWA",
+          "metadata_country_code": "RWA",
+          "metadata_year": 1993,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.187
+        },
+        {
+          "input": "{\"year\": 1982, \"edi\": 0.163, \"ldi\": 0.074, \"gini_market\": 43.0, \"gini_net\": 38.5, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2144.795898, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "SDN",
+          "metadata_country_code": "SDN",
+          "metadata_year": 1982,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.163
+        },
+        {
+          "input": "{\"year\": 1971, \"edi\": 0.313, \"ldi\": 0.269, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 7411.65332, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "SGP",
+          "metadata_country_code": "SGP",
+          "metadata_year": 1971,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.313
+        },
+        {
+          "input": "{\"year\": 1960, \"edi\": 0.238, \"ldi\": 0.121, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": 0.46, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "SLE",
+          "metadata_country_code": "SLE",
+          "metadata_year": 1960,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.238
+        },
+        {
+          "input": "{\"year\": 2013, \"edi\": 0.626, \"ldi\": 0.437, \"gini_market\": 42.0, \"gini_net\": 39.7, \"redistribution_swiid\": 2.3, \"redistribution_swiid_se\": 2.9, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 8076.741211, \"schooling\": 6.6, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 14.0}",
+          "output": "SLV",
+          "metadata_country_code": "SLV",
+          "metadata_year": 2013,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 14.0,
+          "metadata_edi": 0.626
+        },
+        {
+          "input": "{\"year\": 2002, \"edi\": 0.61, \"ldi\": 0.499, \"gini_market\": 52.9, \"gini_net\": 35.0, \"redistribution_swiid\": 17.9, \"redistribution_swiid_se\": 1.9, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 9713.594727, \"schooling\": 9.7, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 1.0}",
+          "output": "SRB",
+          "metadata_country_code": "SRB",
+          "metadata_year": 2002,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 1.0,
+          "metadata_edi": 0.61
+        },
+        {
+          "input": "{\"year\": 1991, \"edi\": 0.54, \"ldi\": 0.403, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1860.089722, \"schooling\": 3.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "STP",
+          "metadata_country_code": "STP",
+          "metadata_year": 1991,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.54
+        },
+        {
+          "input": "{\"year\": 1980, \"edi\": 0.195, \"ldi\": 0.056, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": 10.13, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "SVK",
+          "metadata_country_code": "SVK",
+          "metadata_year": 1980,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.195
+        },
+        {
+          "input": "{\"year\": 1969, \"edi\": 0.775, \"ldi\": 0.727, \"gini_market\": 44.2, \"gini_net\": 29.0, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 15.609298, \"gdp_pc\": 22700.068359, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 9.0}",
+          "output": "SWE",
+          "metadata_country_code": "SWE",
+          "metadata_year": 1969,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 9.0,
+          "metadata_edi": 0.775
+        },
+        {
+          "input": "{\"year\": 2022, \"edi\": 0.117, \"ldi\": 0.097, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 9336.516602, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "SWZ",
+          "metadata_country_code": "SWZ",
+          "metadata_year": 2022,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.117
+        },
+        {
+          "input": "{\"year\": 2011, \"edi\": 0.144, \"ldi\": 0.038, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 6524.648438, \"schooling\": 6.3, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "SYR",
+          "metadata_country_code": "SYR",
+          "metadata_year": 2011,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.144
+        },
+        {
+          "input": "{\"year\": 2000, \"edi\": 0.301, \"ldi\": 0.167, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 1485.857666, \"schooling\": 4.0, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "TGO",
+          "metadata_country_code": "TGO",
+          "metadata_year": 2000,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.301
+        },
+        {
+          "input": "{\"year\": 1989, \"edi\": 0.176, \"ldi\": 0.064, \"gini_market\": 37.2, \"gini_net\": 37.3, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "TJK",
+          "metadata_country_code": "TJK",
+          "metadata_year": 1989,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.176
+        },
+        {
+          "input": "{\"year\": 1979, \"edi\": 0.076, \"ldi\": null, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "TLS",
+          "metadata_country_code": "TLS",
+          "metadata_year": 1979,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.076
+        },
+        {
+          "input": "{\"year\": 1968, \"edi\": 0.187, \"ldi\": 0.148, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2314.217773, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "TUN",
+          "metadata_country_code": "TUN",
+          "metadata_year": 1968,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.187
+        },
+        {
+          "input": "{\"year\": 2021, \"edi\": 0.287, \"ldi\": 0.113, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": 11.037, \"gdp_pc\": 29102.269531, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 35.0}",
+          "output": "TUR",
+          "metadata_country_code": "TUR",
+          "metadata_year": 2021,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 35.0,
+          "metadata_edi": 0.287
+        },
+        {
+          "input": "{\"year\": 2010, \"edi\": 0.467, \"ldi\": 0.397, \"gini_market\": 41.5, \"gini_net\": 44.4, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 2327.92627, \"schooling\": 5.1, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "TZA",
+          "metadata_country_code": "TZA",
+          "metadata_year": 2010,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.467
+        },
+        {
+          "input": "{\"year\": 1999, \"edi\": 0.422, \"ldi\": 0.245, \"gini_market\": 34.6, \"gini_net\": 29.5, \"redistribution_swiid\": 5.1, \"redistribution_swiid_se\": 2.3, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 5433.808105, \"schooling\": 10.6, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 6.0}",
+          "output": "UKR",
+          "metadata_country_code": "UKR",
+          "metadata_year": 1999,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 6.0,
+          "metadata_edi": 0.422
+        },
+        {
+          "input": "{\"year\": 1988, \"edi\": 0.862, \"ldi\": 0.797, \"gini_market\": 46.4, \"gini_net\": 34.6, \"redistribution_swiid\": 11.8, \"redistribution_swiid_se\": 0.8, \"redistribution_owid\": 0.107, \"gross_socx\": 12.845, \"gdp_pc\": 41518.605469, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 28.0}",
+          "output": "USA",
+          "metadata_country_code": "USA",
+          "metadata_year": 1988,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 28.0,
+          "metadata_edi": 0.862
+        },
+        {
+          "input": "{\"year\": 1977, \"edi\": 0.736, \"ldi\": 0.59, \"gini_market\": 41.8, \"gini_net\": 40.6, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 11476.24707, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 17.0}",
+          "output": "VEN",
+          "metadata_country_code": "VEN",
+          "metadata_year": 1977,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 17.0,
+          "metadata_edi": 0.736
+        },
+        {
+          "input": "{\"year\": 1982, \"edi\": 0.699, \"ldi\": 0.584, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 2.0}",
+          "output": "VUT",
+          "metadata_country_code": "VUT",
+          "metadata_year": 1982,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 2.0,
+          "metadata_edi": 0.699
+        },
+        {
+          "input": "{\"year\": 2002, \"edi\": 0.743, \"ldi\": 0.629, \"gini_market\": 67.4, \"gini_net\": 57.9, \"redistribution_swiid\": 9.5, \"redistribution_swiid_se\": 2.4, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": 12120.293945, \"schooling\": 8.5, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 7.0}",
+          "output": "ZAF",
+          "metadata_country_code": "ZAF",
+          "metadata_year": 2002,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 7.0,
+          "metadata_edi": 0.743
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3988 @@
+{
+  "vdem_panel": [
+    {
+      "country": "Germany",
+      "year": 1989,
+      "edi": 0.87
+    },
+    {
+      "country": "Germany",
+      "year": 1990,
+      "edi": 0.88
+    },
+    {
+      "country": "Germany",
+      "year": 1991,
+      "edi": 0.88
+    },
+    {
+      "country": "Germany",
+      "year": 1992,
+      "edi": 0.89
+    },
+    {
+      "country": "Germany",
+      "year": 1993,
+      "edi": 0.89
+    },
+    {
+      "country": "Germany",
+      "year": 1994,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 1995,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 1996,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 1997,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 1998,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 1999,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2000,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2001,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2002,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2003,
+      "edi": 0.89
+    },
+    {
+      "country": "Germany",
+      "year": 2004,
+      "edi": 0.89
+    },
+    {
+      "country": "Germany",
+      "year": 2005,
+      "edi": 0.89
+    },
+    {
+      "country": "Germany",
+      "year": 2006,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2007,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2008,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2009,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2010,
+      "edi": 0.92
+    },
+    {
+      "country": "Germany",
+      "year": 2011,
+      "edi": 0.92
+    },
+    {
+      "country": "Germany",
+      "year": 2012,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2013,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2014,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2015,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2016,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2017,
+      "edi": 0.92
+    },
+    {
+      "country": "Germany",
+      "year": 2018,
+      "edi": 0.92
+    },
+    {
+      "country": "Germany",
+      "year": 2019,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2020,
+      "edi": 0.91
+    },
+    {
+      "country": "Germany",
+      "year": 2021,
+      "edi": 0.9
+    },
+    {
+      "country": "Germany",
+      "year": 2022,
+      "edi": 0.89
+    },
+    {
+      "country": "Germany",
+      "year": 2023,
+      "edi": 0.89
+    },
+    {
+      "country": "Sweden",
+      "year": 1989,
+      "edi": 0.9
+    },
+    {
+      "country": "Sweden",
+      "year": 1990,
+      "edi": 0.91
+    },
+    {
+      "country": "Sweden",
+      "year": 1991,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 1992,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 1993,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 1994,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 1995,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 1996,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 1997,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 1998,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 1999,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2000,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2001,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2002,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2003,
+      "edi": 0.91
+    },
+    {
+      "country": "Sweden",
+      "year": 2004,
+      "edi": 0.91
+    },
+    {
+      "country": "Sweden",
+      "year": 2005,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2006,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2007,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2008,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2009,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2010,
+      "edi": 0.94
+    },
+    {
+      "country": "Sweden",
+      "year": 2011,
+      "edi": 0.94
+    },
+    {
+      "country": "Sweden",
+      "year": 2012,
+      "edi": 0.94
+    },
+    {
+      "country": "Sweden",
+      "year": 2013,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2014,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2015,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2016,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2017,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2018,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2019,
+      "edi": 0.93
+    },
+    {
+      "country": "Sweden",
+      "year": 2020,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2021,
+      "edi": 0.92
+    },
+    {
+      "country": "Sweden",
+      "year": 2022,
+      "edi": 0.91
+    },
+    {
+      "country": "Sweden",
+      "year": 2023,
+      "edi": 0.91
+    },
+    {
+      "country": "Hungary",
+      "year": 1989,
+      "edi": 0.7
+    },
+    {
+      "country": "Hungary",
+      "year": 1990,
+      "edi": 0.72
+    },
+    {
+      "country": "Hungary",
+      "year": 1991,
+      "edi": 0.74
+    },
+    {
+      "country": "Hungary",
+      "year": 1992,
+      "edi": 0.75
+    },
+    {
+      "country": "Hungary",
+      "year": 1993,
+      "edi": 0.76
+    },
+    {
+      "country": "Hungary",
+      "year": 1994,
+      "edi": 0.76
+    },
+    {
+      "country": "Hungary",
+      "year": 1995,
+      "edi": 0.77
+    },
+    {
+      "country": "Hungary",
+      "year": 1996,
+      "edi": 0.77
+    },
+    {
+      "country": "Hungary",
+      "year": 1997,
+      "edi": 0.78
+    },
+    {
+      "country": "Hungary",
+      "year": 1998,
+      "edi": 0.78
+    },
+    {
+      "country": "Hungary",
+      "year": 1999,
+      "edi": 0.79
+    },
+    {
+      "country": "Hungary",
+      "year": 2000,
+      "edi": 0.79
+    },
+    {
+      "country": "Hungary",
+      "year": 2001,
+      "edi": 0.8
+    },
+    {
+      "country": "Hungary",
+      "year": 2002,
+      "edi": 0.8
+    },
+    {
+      "country": "Hungary",
+      "year": 2003,
+      "edi": 0.81
+    },
+    {
+      "country": "Hungary",
+      "year": 2004,
+      "edi": 0.81
+    },
+    {
+      "country": "Hungary",
+      "year": 2005,
+      "edi": 0.82
+    },
+    {
+      "country": "Hungary",
+      "year": 2006,
+      "edi": 0.82
+    },
+    {
+      "country": "Hungary",
+      "year": 2007,
+      "edi": 0.82
+    },
+    {
+      "country": "Hungary",
+      "year": 2008,
+      "edi": 0.82
+    },
+    {
+      "country": "Hungary",
+      "year": 2009,
+      "edi": 0.81
+    },
+    {
+      "country": "Hungary",
+      "year": 2010,
+      "edi": 0.8
+    },
+    {
+      "country": "Hungary",
+      "year": 2011,
+      "edi": 0.78
+    },
+    {
+      "country": "Hungary",
+      "year": 2012,
+      "edi": 0.75
+    },
+    {
+      "country": "Hungary",
+      "year": 2013,
+      "edi": 0.72
+    },
+    {
+      "country": "Hungary",
+      "year": 2014,
+      "edi": 0.69
+    },
+    {
+      "country": "Hungary",
+      "year": 2015,
+      "edi": 0.66
+    },
+    {
+      "country": "Hungary",
+      "year": 2016,
+      "edi": 0.63
+    },
+    {
+      "country": "Hungary",
+      "year": 2017,
+      "edi": 0.61
+    },
+    {
+      "country": "Hungary",
+      "year": 2018,
+      "edi": 0.6
+    },
+    {
+      "country": "Hungary",
+      "year": 2019,
+      "edi": 0.59
+    },
+    {
+      "country": "Hungary",
+      "year": 2020,
+      "edi": 0.58
+    },
+    {
+      "country": "Hungary",
+      "year": 2021,
+      "edi": 0.57
+    },
+    {
+      "country": "Hungary",
+      "year": 2022,
+      "edi": 0.57
+    },
+    {
+      "country": "Hungary",
+      "year": 2023,
+      "edi": 0.57
+    },
+    {
+      "country": "Turkey",
+      "year": 1989,
+      "edi": 0.6
+    },
+    {
+      "country": "Turkey",
+      "year": 1990,
+      "edi": 0.61
+    },
+    {
+      "country": "Turkey",
+      "year": 1991,
+      "edi": 0.62
+    },
+    {
+      "country": "Turkey",
+      "year": 1992,
+      "edi": 0.63
+    },
+    {
+      "country": "Turkey",
+      "year": 1993,
+      "edi": 0.63
+    },
+    {
+      "country": "Turkey",
+      "year": 1994,
+      "edi": 0.62
+    },
+    {
+      "country": "Turkey",
+      "year": 1995,
+      "edi": 0.62
+    },
+    {
+      "country": "Turkey",
+      "year": 1996,
+      "edi": 0.63
+    },
+    {
+      "country": "Turkey",
+      "year": 1997,
+      "edi": 0.63
+    },
+    {
+      "country": "Turkey",
+      "year": 1998,
+      "edi": 0.64
+    },
+    {
+      "country": "Turkey",
+      "year": 1999,
+      "edi": 0.64
+    },
+    {
+      "country": "Turkey",
+      "year": 2000,
+      "edi": 0.65
+    },
+    {
+      "country": "Turkey",
+      "year": 2001,
+      "edi": 0.65
+    },
+    {
+      "country": "Turkey",
+      "year": 2002,
+      "edi": 0.65
+    },
+    {
+      "country": "Turkey",
+      "year": 2003,
+      "edi": 0.64
+    },
+    {
+      "country": "Turkey",
+      "year": 2004,
+      "edi": 0.64
+    },
+    {
+      "country": "Turkey",
+      "year": 2005,
+      "edi": 0.63
+    },
+    {
+      "country": "Turkey",
+      "year": 2006,
+      "edi": 0.63
+    },
+    {
+      "country": "Turkey",
+      "year": 2007,
+      "edi": 0.62
+    },
+    {
+      "country": "Turkey",
+      "year": 2008,
+      "edi": 0.61
+    },
+    {
+      "country": "Turkey",
+      "year": 2009,
+      "edi": 0.6
+    },
+    {
+      "country": "Turkey",
+      "year": 2010,
+      "edi": 0.58
+    },
+    {
+      "country": "Turkey",
+      "year": 2011,
+      "edi": 0.55
+    },
+    {
+      "country": "Turkey",
+      "year": 2012,
+      "edi": 0.52
+    },
+    {
+      "country": "Turkey",
+      "year": 2013,
+      "edi": 0.49
+    },
+    {
+      "country": "Turkey",
+      "year": 2014,
+      "edi": 0.46
+    },
+    {
+      "country": "Turkey",
+      "year": 2015,
+      "edi": 0.44
+    },
+    {
+      "country": "Turkey",
+      "year": 2016,
+      "edi": 0.42
+    },
+    {
+      "country": "Turkey",
+      "year": 2017,
+      "edi": 0.4
+    },
+    {
+      "country": "Turkey",
+      "year": 2018,
+      "edi": 0.39
+    },
+    {
+      "country": "Turkey",
+      "year": 2019,
+      "edi": 0.38
+    },
+    {
+      "country": "Turkey",
+      "year": 2020,
+      "edi": 0.37
+    },
+    {
+      "country": "Turkey",
+      "year": 2021,
+      "edi": 0.36
+    },
+    {
+      "country": "Turkey",
+      "year": 2022,
+      "edi": 0.35
+    },
+    {
+      "country": "Turkey",
+      "year": 2023,
+      "edi": 0.34
+    },
+    {
+      "country": "Poland",
+      "year": 1989,
+      "edi": 0.75
+    },
+    {
+      "country": "Poland",
+      "year": 1990,
+      "edi": 0.76
+    },
+    {
+      "country": "Poland",
+      "year": 1991,
+      "edi": 0.77
+    },
+    {
+      "country": "Poland",
+      "year": 1992,
+      "edi": 0.78
+    },
+    {
+      "country": "Poland",
+      "year": 1993,
+      "edi": 0.79
+    },
+    {
+      "country": "Poland",
+      "year": 1994,
+      "edi": 0.8
+    },
+    {
+      "country": "Poland",
+      "year": 1995,
+      "edi": 0.81
+    },
+    {
+      "country": "Poland",
+      "year": 1996,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 1997,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 1998,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 1999,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2000,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2001,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2002,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2003,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2004,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 2005,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2006,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2007,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2008,
+      "edi": 0.83
+    },
+    {
+      "country": "Poland",
+      "year": 2009,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 2010,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 2011,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 2012,
+      "edi": 0.82
+    },
+    {
+      "country": "Poland",
+      "year": 2013,
+      "edi": 0.81
+    },
+    {
+      "country": "Poland",
+      "year": 2014,
+      "edi": 0.81
+    },
+    {
+      "country": "Poland",
+      "year": 2015,
+      "edi": 0.8
+    },
+    {
+      "country": "Poland",
+      "year": 2016,
+      "edi": 0.78
+    },
+    {
+      "country": "Poland",
+      "year": 2017,
+      "edi": 0.75
+    },
+    {
+      "country": "Poland",
+      "year": 2018,
+      "edi": 0.72
+    },
+    {
+      "country": "Poland",
+      "year": 2019,
+      "edi": 0.7
+    },
+    {
+      "country": "Poland",
+      "year": 2020,
+      "edi": 0.69
+    },
+    {
+      "country": "Poland",
+      "year": 2021,
+      "edi": 0.68
+    },
+    {
+      "country": "Poland",
+      "year": 2022,
+      "edi": 0.68
+    },
+    {
+      "country": "Poland",
+      "year": 2023,
+      "edi": 0.68
+    },
+    {
+      "country": "Brazil",
+      "year": 1989,
+      "edi": 0.55
+    },
+    {
+      "country": "Brazil",
+      "year": 1990,
+      "edi": 0.58
+    },
+    {
+      "country": "Brazil",
+      "year": 1991,
+      "edi": 0.6
+    },
+    {
+      "country": "Brazil",
+      "year": 1992,
+      "edi": 0.62
+    },
+    {
+      "country": "Brazil",
+      "year": 1993,
+      "edi": 0.63
+    },
+    {
+      "country": "Brazil",
+      "year": 1994,
+      "edi": 0.65
+    },
+    {
+      "country": "Brazil",
+      "year": 1995,
+      "edi": 0.65
+    },
+    {
+      "country": "Brazil",
+      "year": 1996,
+      "edi": 0.64
+    },
+    {
+      "country": "Brazil",
+      "year": 1997,
+      "edi": 0.64
+    },
+    {
+      "country": "Brazil",
+      "year": 1998,
+      "edi": 0.65
+    },
+    {
+      "country": "Brazil",
+      "year": 1999,
+      "edi": 0.66
+    },
+    {
+      "country": "Brazil",
+      "year": 2000,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2001,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2002,
+      "edi": 0.68
+    },
+    {
+      "country": "Brazil",
+      "year": 2003,
+      "edi": 0.68
+    },
+    {
+      "country": "Brazil",
+      "year": 2004,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2005,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2006,
+      "edi": 0.68
+    },
+    {
+      "country": "Brazil",
+      "year": 2007,
+      "edi": 0.68
+    },
+    {
+      "country": "Brazil",
+      "year": 2008,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2009,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2010,
+      "edi": 0.67
+    },
+    {
+      "country": "Brazil",
+      "year": 2011,
+      "edi": 0.65
+    },
+    {
+      "country": "Brazil",
+      "year": 2012,
+      "edi": 0.64
+    },
+    {
+      "country": "Brazil",
+      "year": 2013,
+      "edi": 0.6
+    },
+    {
+      "country": "Brazil",
+      "year": 2014,
+      "edi": 0.58
+    },
+    {
+      "country": "Brazil",
+      "year": 2015,
+      "edi": 0.56
+    },
+    {
+      "country": "Brazil",
+      "year": 2016,
+      "edi": 0.55
+    },
+    {
+      "country": "Brazil",
+      "year": 2017,
+      "edi": 0.53
+    },
+    {
+      "country": "Brazil",
+      "year": 2018,
+      "edi": 0.51
+    },
+    {
+      "country": "Brazil",
+      "year": 2019,
+      "edi": 0.53
+    },
+    {
+      "country": "Brazil",
+      "year": 2020,
+      "edi": 0.55
+    },
+    {
+      "country": "Brazil",
+      "year": 2021,
+      "edi": 0.56
+    },
+    {
+      "country": "Brazil",
+      "year": 2022,
+      "edi": 0.55
+    },
+    {
+      "country": "Brazil",
+      "year": 2023,
+      "edi": 0.53
+    },
+    {
+      "country": "India",
+      "year": 1989,
+      "edi": 0.55
+    },
+    {
+      "country": "India",
+      "year": 1990,
+      "edi": 0.56
+    },
+    {
+      "country": "India",
+      "year": 1991,
+      "edi": 0.57
+    },
+    {
+      "country": "India",
+      "year": 1992,
+      "edi": 0.57
+    },
+    {
+      "country": "India",
+      "year": 1993,
+      "edi": 0.58
+    },
+    {
+      "country": "India",
+      "year": 1994,
+      "edi": 0.58
+    },
+    {
+      "country": "India",
+      "year": 1995,
+      "edi": 0.59
+    },
+    {
+      "country": "India",
+      "year": 1996,
+      "edi": 0.59
+    },
+    {
+      "country": "India",
+      "year": 1997,
+      "edi": 0.6
+    },
+    {
+      "country": "India",
+      "year": 1998,
+      "edi": 0.6
+    },
+    {
+      "country": "India",
+      "year": 1999,
+      "edi": 0.61
+    },
+    {
+      "country": "India",
+      "year": 2000,
+      "edi": 0.61
+    },
+    {
+      "country": "India",
+      "year": 2001,
+      "edi": 0.62
+    },
+    {
+      "country": "India",
+      "year": 2002,
+      "edi": 0.62
+    },
+    {
+      "country": "India",
+      "year": 2003,
+      "edi": 0.63
+    },
+    {
+      "country": "India",
+      "year": 2004,
+      "edi": 0.62
+    },
+    {
+      "country": "India",
+      "year": 2005,
+      "edi": 0.62
+    },
+    {
+      "country": "India",
+      "year": 2006,
+      "edi": 0.63
+    },
+    {
+      "country": "India",
+      "year": 2007,
+      "edi": 0.63
+    },
+    {
+      "country": "India",
+      "year": 2008,
+      "edi": 0.62
+    },
+    {
+      "country": "India",
+      "year": 2009,
+      "edi": 0.62
+    },
+    {
+      "country": "India",
+      "year": 2010,
+      "edi": 0.61
+    },
+    {
+      "country": "India",
+      "year": 2011,
+      "edi": 0.6
+    },
+    {
+      "country": "India",
+      "year": 2012,
+      "edi": 0.59
+    },
+    {
+      "country": "India",
+      "year": 2013,
+      "edi": 0.58
+    },
+    {
+      "country": "India",
+      "year": 2014,
+      "edi": 0.55
+    },
+    {
+      "country": "India",
+      "year": 2015,
+      "edi": 0.52
+    },
+    {
+      "country": "India",
+      "year": 2016,
+      "edi": 0.49
+    },
+    {
+      "country": "India",
+      "year": 2017,
+      "edi": 0.47
+    },
+    {
+      "country": "India",
+      "year": 2018,
+      "edi": 0.45
+    },
+    {
+      "country": "India",
+      "year": 2019,
+      "edi": 0.46
+    },
+    {
+      "country": "India",
+      "year": 2020,
+      "edi": 0.47
+    },
+    {
+      "country": "India",
+      "year": 2021,
+      "edi": 0.48
+    },
+    {
+      "country": "India",
+      "year": 2022,
+      "edi": 0.48
+    },
+    {
+      "country": "India",
+      "year": 2023,
+      "edi": 0.47
+    }
+  ],
+  "gdp_panel": [
+    {
+      "country": "Germany",
+      "year": 1989,
+      "log_gdp": 10.5
+    },
+    {
+      "country": "Germany",
+      "year": 1990,
+      "log_gdp": 10.51
+    },
+    {
+      "country": "Germany",
+      "year": 1991,
+      "log_gdp": 10.52
+    },
+    {
+      "country": "Germany",
+      "year": 1992,
+      "log_gdp": 10.53
+    },
+    {
+      "country": "Germany",
+      "year": 1993,
+      "log_gdp": 10.54
+    },
+    {
+      "country": "Germany",
+      "year": 1994,
+      "log_gdp": 10.55
+    },
+    {
+      "country": "Germany",
+      "year": 1995,
+      "log_gdp": 10.56
+    },
+    {
+      "country": "Germany",
+      "year": 1996,
+      "log_gdp": 10.57
+    },
+    {
+      "country": "Germany",
+      "year": 1997,
+      "log_gdp": 10.58
+    },
+    {
+      "country": "Germany",
+      "year": 1998,
+      "log_gdp": 10.59
+    },
+    {
+      "country": "Germany",
+      "year": 1999,
+      "log_gdp": 10.6
+    },
+    {
+      "country": "Germany",
+      "year": 2000,
+      "log_gdp": 10.61
+    },
+    {
+      "country": "Germany",
+      "year": 2001,
+      "log_gdp": 10.62
+    },
+    {
+      "country": "Germany",
+      "year": 2002,
+      "log_gdp": 10.63
+    },
+    {
+      "country": "Germany",
+      "year": 2003,
+      "log_gdp": 10.64
+    },
+    {
+      "country": "Germany",
+      "year": 2004,
+      "log_gdp": 10.65
+    },
+    {
+      "country": "Germany",
+      "year": 2005,
+      "log_gdp": 10.66
+    },
+    {
+      "country": "Germany",
+      "year": 2006,
+      "log_gdp": 10.67
+    },
+    {
+      "country": "Germany",
+      "year": 2007,
+      "log_gdp": 10.68
+    },
+    {
+      "country": "Germany",
+      "year": 2008,
+      "log_gdp": 10.69
+    },
+    {
+      "country": "Germany",
+      "year": 2009,
+      "log_gdp": 10.7
+    },
+    {
+      "country": "Germany",
+      "year": 2010,
+      "log_gdp": 10.71
+    },
+    {
+      "country": "Germany",
+      "year": 2011,
+      "log_gdp": 10.72
+    },
+    {
+      "country": "Germany",
+      "year": 2012,
+      "log_gdp": 10.73
+    },
+    {
+      "country": "Germany",
+      "year": 2013,
+      "log_gdp": 10.74
+    },
+    {
+      "country": "Germany",
+      "year": 2014,
+      "log_gdp": 10.75
+    },
+    {
+      "country": "Germany",
+      "year": 2015,
+      "log_gdp": 10.76
+    },
+    {
+      "country": "Germany",
+      "year": 2016,
+      "log_gdp": 10.77
+    },
+    {
+      "country": "Germany",
+      "year": 2017,
+      "log_gdp": 10.78
+    },
+    {
+      "country": "Germany",
+      "year": 2018,
+      "log_gdp": 10.79
+    },
+    {
+      "country": "Germany",
+      "year": 2019,
+      "log_gdp": 10.8
+    },
+    {
+      "country": "Germany",
+      "year": 2020,
+      "log_gdp": 10.81
+    },
+    {
+      "country": "Germany",
+      "year": 2021,
+      "log_gdp": 10.82
+    },
+    {
+      "country": "Germany",
+      "year": 2022,
+      "log_gdp": 10.83
+    },
+    {
+      "country": "Germany",
+      "year": 2023,
+      "log_gdp": 10.84
+    },
+    {
+      "country": "Sweden",
+      "year": 1989,
+      "log_gdp": 10.4
+    },
+    {
+      "country": "Sweden",
+      "year": 1990,
+      "log_gdp": 10.412
+    },
+    {
+      "country": "Sweden",
+      "year": 1991,
+      "log_gdp": 10.424
+    },
+    {
+      "country": "Sweden",
+      "year": 1992,
+      "log_gdp": 10.436
+    },
+    {
+      "country": "Sweden",
+      "year": 1993,
+      "log_gdp": 10.448
+    },
+    {
+      "country": "Sweden",
+      "year": 1994,
+      "log_gdp": 10.46
+    },
+    {
+      "country": "Sweden",
+      "year": 1995,
+      "log_gdp": 10.472
+    },
+    {
+      "country": "Sweden",
+      "year": 1996,
+      "log_gdp": 10.484
+    },
+    {
+      "country": "Sweden",
+      "year": 1997,
+      "log_gdp": 10.496
+    },
+    {
+      "country": "Sweden",
+      "year": 1998,
+      "log_gdp": 10.508
+    },
+    {
+      "country": "Sweden",
+      "year": 1999,
+      "log_gdp": 10.52
+    },
+    {
+      "country": "Sweden",
+      "year": 2000,
+      "log_gdp": 10.532
+    },
+    {
+      "country": "Sweden",
+      "year": 2001,
+      "log_gdp": 10.544
+    },
+    {
+      "country": "Sweden",
+      "year": 2002,
+      "log_gdp": 10.556
+    },
+    {
+      "country": "Sweden",
+      "year": 2003,
+      "log_gdp": 10.568
+    },
+    {
+      "country": "Sweden",
+      "year": 2004,
+      "log_gdp": 10.58
+    },
+    {
+      "country": "Sweden",
+      "year": 2005,
+      "log_gdp": 10.592
+    },
+    {
+      "country": "Sweden",
+      "year": 2006,
+      "log_gdp": 10.604
+    },
+    {
+      "country": "Sweden",
+      "year": 2007,
+      "log_gdp": 10.616
+    },
+    {
+      "country": "Sweden",
+      "year": 2008,
+      "log_gdp": 10.628
+    },
+    {
+      "country": "Sweden",
+      "year": 2009,
+      "log_gdp": 10.64
+    },
+    {
+      "country": "Sweden",
+      "year": 2010,
+      "log_gdp": 10.652
+    },
+    {
+      "country": "Sweden",
+      "year": 2011,
+      "log_gdp": 10.664
+    },
+    {
+      "country": "Sweden",
+      "year": 2012,
+      "log_gdp": 10.676
+    },
+    {
+      "country": "Sweden",
+      "year": 2013,
+      "log_gdp": 10.688
+    },
+    {
+      "country": "Sweden",
+      "year": 2014,
+      "log_gdp": 10.7
+    },
+    {
+      "country": "Sweden",
+      "year": 2015,
+      "log_gdp": 10.712
+    },
+    {
+      "country": "Sweden",
+      "year": 2016,
+      "log_gdp": 10.724
+    },
+    {
+      "country": "Sweden",
+      "year": 2017,
+      "log_gdp": 10.736
+    },
+    {
+      "country": "Sweden",
+      "year": 2018,
+      "log_gdp": 10.748
+    },
+    {
+      "country": "Sweden",
+      "year": 2019,
+      "log_gdp": 10.76
+    },
+    {
+      "country": "Sweden",
+      "year": 2020,
+      "log_gdp": 10.772
+    },
+    {
+      "country": "Sweden",
+      "year": 2021,
+      "log_gdp": 10.784
+    },
+    {
+      "country": "Sweden",
+      "year": 2022,
+      "log_gdp": 10.796
+    },
+    {
+      "country": "Sweden",
+      "year": 2023,
+      "log_gdp": 10.808
+    },
+    {
+      "country": "Hungary",
+      "year": 1989,
+      "log_gdp": 9.3
+    },
+    {
+      "country": "Hungary",
+      "year": 1990,
+      "log_gdp": 9.325
+    },
+    {
+      "country": "Hungary",
+      "year": 1991,
+      "log_gdp": 9.35
+    },
+    {
+      "country": "Hungary",
+      "year": 1992,
+      "log_gdp": 9.375
+    },
+    {
+      "country": "Hungary",
+      "year": 1993,
+      "log_gdp": 9.4
+    },
+    {
+      "country": "Hungary",
+      "year": 1994,
+      "log_gdp": 9.425
+    },
+    {
+      "country": "Hungary",
+      "year": 1995,
+      "log_gdp": 9.45
+    },
+    {
+      "country": "Hungary",
+      "year": 1996,
+      "log_gdp": 9.475
+    },
+    {
+      "country": "Hungary",
+      "year": 1997,
+      "log_gdp": 9.5
+    },
+    {
+      "country": "Hungary",
+      "year": 1998,
+      "log_gdp": 9.525
+    },
+    {
+      "country": "Hungary",
+      "year": 1999,
+      "log_gdp": 9.55
+    },
+    {
+      "country": "Hungary",
+      "year": 2000,
+      "log_gdp": 9.575
+    },
+    {
+      "country": "Hungary",
+      "year": 2001,
+      "log_gdp": 9.6
+    },
+    {
+      "country": "Hungary",
+      "year": 2002,
+      "log_gdp": 9.625
+    },
+    {
+      "country": "Hungary",
+      "year": 2003,
+      "log_gdp": 9.65
+    },
+    {
+      "country": "Hungary",
+      "year": 2004,
+      "log_gdp": 9.675
+    },
+    {
+      "country": "Hungary",
+      "year": 2005,
+      "log_gdp": 9.7
+    },
+    {
+      "country": "Hungary",
+      "year": 2006,
+      "log_gdp": 9.725
+    },
+    {
+      "country": "Hungary",
+      "year": 2007,
+      "log_gdp": 9.75
+    },
+    {
+      "country": "Hungary",
+      "year": 2008,
+      "log_gdp": 9.775
+    },
+    {
+      "country": "Hungary",
+      "year": 2009,
+      "log_gdp": 9.8
+    },
+    {
+      "country": "Hungary",
+      "year": 2010,
+      "log_gdp": 9.825
+    },
+    {
+      "country": "Hungary",
+      "year": 2011,
+      "log_gdp": 9.85
+    },
+    {
+      "country": "Hungary",
+      "year": 2012,
+      "log_gdp": 9.875
+    },
+    {
+      "country": "Hungary",
+      "year": 2013,
+      "log_gdp": 9.9
+    },
+    {
+      "country": "Hungary",
+      "year": 2014,
+      "log_gdp": 9.925
+    },
+    {
+      "country": "Hungary",
+      "year": 2015,
+      "log_gdp": 9.95
+    },
+    {
+      "country": "Hungary",
+      "year": 2016,
+      "log_gdp": 9.975
+    },
+    {
+      "country": "Hungary",
+      "year": 2017,
+      "log_gdp": 10.0
+    },
+    {
+      "country": "Hungary",
+      "year": 2018,
+      "log_gdp": 10.025
+    },
+    {
+      "country": "Hungary",
+      "year": 2019,
+      "log_gdp": 10.05
+    },
+    {
+      "country": "Hungary",
+      "year": 2020,
+      "log_gdp": 10.075
+    },
+    {
+      "country": "Hungary",
+      "year": 2021,
+      "log_gdp": 10.1
+    },
+    {
+      "country": "Hungary",
+      "year": 2022,
+      "log_gdp": 10.125
+    },
+    {
+      "country": "Hungary",
+      "year": 2023,
+      "log_gdp": 10.15
+    },
+    {
+      "country": "Turkey",
+      "year": 1989,
+      "log_gdp": 8.9
+    },
+    {
+      "country": "Turkey",
+      "year": 1990,
+      "log_gdp": 8.93
+    },
+    {
+      "country": "Turkey",
+      "year": 1991,
+      "log_gdp": 8.96
+    },
+    {
+      "country": "Turkey",
+      "year": 1992,
+      "log_gdp": 8.99
+    },
+    {
+      "country": "Turkey",
+      "year": 1993,
+      "log_gdp": 9.02
+    },
+    {
+      "country": "Turkey",
+      "year": 1994,
+      "log_gdp": 9.05
+    },
+    {
+      "country": "Turkey",
+      "year": 1995,
+      "log_gdp": 9.08
+    },
+    {
+      "country": "Turkey",
+      "year": 1996,
+      "log_gdp": 9.11
+    },
+    {
+      "country": "Turkey",
+      "year": 1997,
+      "log_gdp": 9.14
+    },
+    {
+      "country": "Turkey",
+      "year": 1998,
+      "log_gdp": 9.17
+    },
+    {
+      "country": "Turkey",
+      "year": 1999,
+      "log_gdp": 9.2
+    },
+    {
+      "country": "Turkey",
+      "year": 2000,
+      "log_gdp": 9.23
+    },
+    {
+      "country": "Turkey",
+      "year": 2001,
+      "log_gdp": 9.26
+    },
+    {
+      "country": "Turkey",
+      "year": 2002,
+      "log_gdp": 9.29
+    },
+    {
+      "country": "Turkey",
+      "year": 2003,
+      "log_gdp": 9.32
+    },
+    {
+      "country": "Turkey",
+      "year": 2004,
+      "log_gdp": 9.35
+    },
+    {
+      "country": "Turkey",
+      "year": 2005,
+      "log_gdp": 9.38
+    },
+    {
+      "country": "Turkey",
+      "year": 2006,
+      "log_gdp": 9.41
+    },
+    {
+      "country": "Turkey",
+      "year": 2007,
+      "log_gdp": 9.44
+    },
+    {
+      "country": "Turkey",
+      "year": 2008,
+      "log_gdp": 9.47
+    },
+    {
+      "country": "Turkey",
+      "year": 2009,
+      "log_gdp": 9.5
+    },
+    {
+      "country": "Turkey",
+      "year": 2010,
+      "log_gdp": 9.53
+    },
+    {
+      "country": "Turkey",
+      "year": 2011,
+      "log_gdp": 9.56
+    },
+    {
+      "country": "Turkey",
+      "year": 2012,
+      "log_gdp": 9.59
+    },
+    {
+      "country": "Turkey",
+      "year": 2013,
+      "log_gdp": 9.62
+    },
+    {
+      "country": "Turkey",
+      "year": 2014,
+      "log_gdp": 9.65
+    },
+    {
+      "country": "Turkey",
+      "year": 2015,
+      "log_gdp": 9.68
+    },
+    {
+      "country": "Turkey",
+      "year": 2016,
+      "log_gdp": 9.71
+    },
+    {
+      "country": "Turkey",
+      "year": 2017,
+      "log_gdp": 9.74
+    },
+    {
+      "country": "Turkey",
+      "year": 2018,
+      "log_gdp": 9.77
+    },
+    {
+      "country": "Turkey",
+      "year": 2019,
+      "log_gdp": 9.8
+    },
+    {
+      "country": "Turkey",
+      "year": 2020,
+      "log_gdp": 9.83
+    },
+    {
+      "country": "Turkey",
+      "year": 2021,
+      "log_gdp": 9.86
+    },
+    {
+      "country": "Turkey",
+      "year": 2022,
+      "log_gdp": 9.89
+    },
+    {
+      "country": "Turkey",
+      "year": 2023,
+      "log_gdp": 9.92
+    },
+    {
+      "country": "Poland",
+      "year": 1989,
+      "log_gdp": 9.0
+    },
+    {
+      "country": "Poland",
+      "year": 1990,
+      "log_gdp": 9.03
+    },
+    {
+      "country": "Poland",
+      "year": 1991,
+      "log_gdp": 9.06
+    },
+    {
+      "country": "Poland",
+      "year": 1992,
+      "log_gdp": 9.09
+    },
+    {
+      "country": "Poland",
+      "year": 1993,
+      "log_gdp": 9.12
+    },
+    {
+      "country": "Poland",
+      "year": 1994,
+      "log_gdp": 9.15
+    },
+    {
+      "country": "Poland",
+      "year": 1995,
+      "log_gdp": 9.18
+    },
+    {
+      "country": "Poland",
+      "year": 1996,
+      "log_gdp": 9.21
+    },
+    {
+      "country": "Poland",
+      "year": 1997,
+      "log_gdp": 9.24
+    },
+    {
+      "country": "Poland",
+      "year": 1998,
+      "log_gdp": 9.27
+    },
+    {
+      "country": "Poland",
+      "year": 1999,
+      "log_gdp": 9.3
+    },
+    {
+      "country": "Poland",
+      "year": 2000,
+      "log_gdp": 9.33
+    },
+    {
+      "country": "Poland",
+      "year": 2001,
+      "log_gdp": 9.36
+    },
+    {
+      "country": "Poland",
+      "year": 2002,
+      "log_gdp": 9.39
+    },
+    {
+      "country": "Poland",
+      "year": 2003,
+      "log_gdp": 9.42
+    },
+    {
+      "country": "Poland",
+      "year": 2004,
+      "log_gdp": 9.45
+    },
+    {
+      "country": "Poland",
+      "year": 2005,
+      "log_gdp": 9.48
+    },
+    {
+      "country": "Poland",
+      "year": 2006,
+      "log_gdp": 9.51
+    },
+    {
+      "country": "Poland",
+      "year": 2007,
+      "log_gdp": 9.54
+    },
+    {
+      "country": "Poland",
+      "year": 2008,
+      "log_gdp": 9.57
+    },
+    {
+      "country": "Poland",
+      "year": 2009,
+      "log_gdp": 9.6
+    },
+    {
+      "country": "Poland",
+      "year": 2010,
+      "log_gdp": 9.63
+    },
+    {
+      "country": "Poland",
+      "year": 2011,
+      "log_gdp": 9.66
+    },
+    {
+      "country": "Poland",
+      "year": 2012,
+      "log_gdp": 9.69
+    },
+    {
+      "country": "Poland",
+      "year": 2013,
+      "log_gdp": 9.72
+    },
+    {
+      "country": "Poland",
+      "year": 2014,
+      "log_gdp": 9.75
+    },
+    {
+      "country": "Poland",
+      "year": 2015,
+      "log_gdp": 9.78
+    },
+    {
+      "country": "Poland",
+      "year": 2016,
+      "log_gdp": 9.81
+    },
+    {
+      "country": "Poland",
+      "year": 2017,
+      "log_gdp": 9.84
+    },
+    {
+      "country": "Poland",
+      "year": 2018,
+      "log_gdp": 9.87
+    },
+    {
+      "country": "Poland",
+      "year": 2019,
+      "log_gdp": 9.9
+    },
+    {
+      "country": "Poland",
+      "year": 2020,
+      "log_gdp": 9.93
+    },
+    {
+      "country": "Poland",
+      "year": 2021,
+      "log_gdp": 9.96
+    },
+    {
+      "country": "Poland",
+      "year": 2022,
+      "log_gdp": 9.99
+    },
+    {
+      "country": "Poland",
+      "year": 2023,
+      "log_gdp": 10.02
+    },
+    {
+      "country": "Brazil",
+      "year": 1989,
+      "log_gdp": 9.1
+    },
+    {
+      "country": "Brazil",
+      "year": 1990,
+      "log_gdp": 9.115
+    },
+    {
+      "country": "Brazil",
+      "year": 1991,
+      "log_gdp": 9.13
+    },
+    {
+      "country": "Brazil",
+      "year": 1992,
+      "log_gdp": 9.145
+    },
+    {
+      "country": "Brazil",
+      "year": 1993,
+      "log_gdp": 9.16
+    },
+    {
+      "country": "Brazil",
+      "year": 1994,
+      "log_gdp": 9.175
+    },
+    {
+      "country": "Brazil",
+      "year": 1995,
+      "log_gdp": 9.19
+    },
+    {
+      "country": "Brazil",
+      "year": 1996,
+      "log_gdp": 9.205
+    },
+    {
+      "country": "Brazil",
+      "year": 1997,
+      "log_gdp": 9.22
+    },
+    {
+      "country": "Brazil",
+      "year": 1998,
+      "log_gdp": 9.235
+    },
+    {
+      "country": "Brazil",
+      "year": 1999,
+      "log_gdp": 9.25
+    },
+    {
+      "country": "Brazil",
+      "year": 2000,
+      "log_gdp": 9.265
+    },
+    {
+      "country": "Brazil",
+      "year": 2001,
+      "log_gdp": 9.28
+    },
+    {
+      "country": "Brazil",
+      "year": 2002,
+      "log_gdp": 9.295
+    },
+    {
+      "country": "Brazil",
+      "year": 2003,
+      "log_gdp": 9.31
+    },
+    {
+      "country": "Brazil",
+      "year": 2004,
+      "log_gdp": 9.325
+    },
+    {
+      "country": "Brazil",
+      "year": 2005,
+      "log_gdp": 9.34
+    },
+    {
+      "country": "Brazil",
+      "year": 2006,
+      "log_gdp": 9.355
+    },
+    {
+      "country": "Brazil",
+      "year": 2007,
+      "log_gdp": 9.37
+    },
+    {
+      "country": "Brazil",
+      "year": 2008,
+      "log_gdp": 9.385
+    },
+    {
+      "country": "Brazil",
+      "year": 2009,
+      "log_gdp": 9.4
+    },
+    {
+      "country": "Brazil",
+      "year": 2010,
+      "log_gdp": 9.415
+    },
+    {
+      "country": "Brazil",
+      "year": 2011,
+      "log_gdp": 9.43
+    },
+    {
+      "country": "Brazil",
+      "year": 2012,
+      "log_gdp": 9.445
+    },
+    {
+      "country": "Brazil",
+      "year": 2013,
+      "log_gdp": 9.46
+    },
+    {
+      "country": "Brazil",
+      "year": 2014,
+      "log_gdp": 9.475
+    },
+    {
+      "country": "Brazil",
+      "year": 2015,
+      "log_gdp": 9.49
+    },
+    {
+      "country": "Brazil",
+      "year": 2016,
+      "log_gdp": 9.505
+    },
+    {
+      "country": "Brazil",
+      "year": 2017,
+      "log_gdp": 9.52
+    },
+    {
+      "country": "Brazil",
+      "year": 2018,
+      "log_gdp": 9.535
+    },
+    {
+      "country": "Brazil",
+      "year": 2019,
+      "log_gdp": 9.55
+    },
+    {
+      "country": "Brazil",
+      "year": 2020,
+      "log_gdp": 9.565
+    },
+    {
+      "country": "Brazil",
+      "year": 2021,
+      "log_gdp": 9.58
+    },
+    {
+      "country": "Brazil",
+      "year": 2022,
+      "log_gdp": 9.595
+    },
+    {
+      "country": "Brazil",
+      "year": 2023,
+      "log_gdp": 9.61
+    },
+    {
+      "country": "India",
+      "year": 1989,
+      "log_gdp": 7.8
+    },
+    {
+      "country": "India",
+      "year": 1990,
+      "log_gdp": 7.84
+    },
+    {
+      "country": "India",
+      "year": 1991,
+      "log_gdp": 7.88
+    },
+    {
+      "country": "India",
+      "year": 1992,
+      "log_gdp": 7.92
+    },
+    {
+      "country": "India",
+      "year": 1993,
+      "log_gdp": 7.96
+    },
+    {
+      "country": "India",
+      "year": 1994,
+      "log_gdp": 8.0
+    },
+    {
+      "country": "India",
+      "year": 1995,
+      "log_gdp": 8.04
+    },
+    {
+      "country": "India",
+      "year": 1996,
+      "log_gdp": 8.08
+    },
+    {
+      "country": "India",
+      "year": 1997,
+      "log_gdp": 8.12
+    },
+    {
+      "country": "India",
+      "year": 1998,
+      "log_gdp": 8.16
+    },
+    {
+      "country": "India",
+      "year": 1999,
+      "log_gdp": 8.2
+    },
+    {
+      "country": "India",
+      "year": 2000,
+      "log_gdp": 8.24
+    },
+    {
+      "country": "India",
+      "year": 2001,
+      "log_gdp": 8.28
+    },
+    {
+      "country": "India",
+      "year": 2002,
+      "log_gdp": 8.32
+    },
+    {
+      "country": "India",
+      "year": 2003,
+      "log_gdp": 8.36
+    },
+    {
+      "country": "India",
+      "year": 2004,
+      "log_gdp": 8.4
+    },
+    {
+      "country": "India",
+      "year": 2005,
+      "log_gdp": 8.44
+    },
+    {
+      "country": "India",
+      "year": 2006,
+      "log_gdp": 8.48
+    },
+    {
+      "country": "India",
+      "year": 2007,
+      "log_gdp": 8.52
+    },
+    {
+      "country": "India",
+      "year": 2008,
+      "log_gdp": 8.56
+    },
+    {
+      "country": "India",
+      "year": 2009,
+      "log_gdp": 8.6
+    },
+    {
+      "country": "India",
+      "year": 2010,
+      "log_gdp": 8.64
+    },
+    {
+      "country": "India",
+      "year": 2011,
+      "log_gdp": 8.68
+    },
+    {
+      "country": "India",
+      "year": 2012,
+      "log_gdp": 8.72
+    },
+    {
+      "country": "India",
+      "year": 2013,
+      "log_gdp": 8.76
+    },
+    {
+      "country": "India",
+      "year": 2014,
+      "log_gdp": 8.8
+    },
+    {
+      "country": "India",
+      "year": 2015,
+      "log_gdp": 8.84
+    },
+    {
+      "country": "India",
+      "year": 2016,
+      "log_gdp": 8.88
+    },
+    {
+      "country": "India",
+      "year": 2017,
+      "log_gdp": 8.92
+    },
+    {
+      "country": "India",
+      "year": 2018,
+      "log_gdp": 8.96
+    },
+    {
+      "country": "India",
+      "year": 2019,
+      "log_gdp": 9.0
+    },
+    {
+      "country": "India",
+      "year": 2020,
+      "log_gdp": 9.04
+    },
+    {
+      "country": "India",
+      "year": 2021,
+      "log_gdp": 9.08
+    },
+    {
+      "country": "India",
+      "year": 2022,
+      "log_gdp": 9.12
+    },
+    {
+      "country": "India",
+      "year": 2023,
+      "log_gdp": 9.16
+    }
+  ],
+  "schooling_panel": [
+    {
+      "country": "Germany",
+      "year": 1989,
+      "schooling": 2.8
+    },
+    {
+      "country": "Germany",
+      "year": 1990,
+      "schooling": 2.805
+    },
+    {
+      "country": "Germany",
+      "year": 1991,
+      "schooling": 2.81
+    },
+    {
+      "country": "Germany",
+      "year": 1992,
+      "schooling": 2.815
+    },
+    {
+      "country": "Germany",
+      "year": 1993,
+      "schooling": 2.82
+    },
+    {
+      "country": "Germany",
+      "year": 1994,
+      "schooling": 2.825
+    },
+    {
+      "country": "Germany",
+      "year": 1995,
+      "schooling": 2.83
+    },
+    {
+      "country": "Germany",
+      "year": 1996,
+      "schooling": 2.835
+    },
+    {
+      "country": "Germany",
+      "year": 1997,
+      "schooling": 2.84
+    },
+    {
+      "country": "Germany",
+      "year": 1998,
+      "schooling": 2.845
+    },
+    {
+      "country": "Germany",
+      "year": 1999,
+      "schooling": 2.85
+    },
+    {
+      "country": "Germany",
+      "year": 2000,
+      "schooling": 2.855
+    },
+    {
+      "country": "Germany",
+      "year": 2001,
+      "schooling": 2.86
+    },
+    {
+      "country": "Germany",
+      "year": 2002,
+      "schooling": 2.865
+    },
+    {
+      "country": "Germany",
+      "year": 2003,
+      "schooling": 2.87
+    },
+    {
+      "country": "Germany",
+      "year": 2004,
+      "schooling": 2.875
+    },
+    {
+      "country": "Germany",
+      "year": 2005,
+      "schooling": 2.88
+    },
+    {
+      "country": "Germany",
+      "year": 2006,
+      "schooling": 2.885
+    },
+    {
+      "country": "Germany",
+      "year": 2007,
+      "schooling": 2.89
+    },
+    {
+      "country": "Germany",
+      "year": 2008,
+      "schooling": 2.895
+    },
+    {
+      "country": "Germany",
+      "year": 2009,
+      "schooling": 2.9
+    },
+    {
+      "country": "Germany",
+      "year": 2010,
+      "schooling": 2.905
+    },
+    {
+      "country": "Germany",
+      "year": 2011,
+      "schooling": 2.91
+    },
+    {
+      "country": "Germany",
+      "year": 2012,
+      "schooling": 2.915
+    },
+    {
+      "country": "Germany",
+      "year": 2013,
+      "schooling": 2.92
+    },
+    {
+      "country": "Germany",
+      "year": 2014,
+      "schooling": 2.925
+    },
+    {
+      "country": "Germany",
+      "year": 2015,
+      "schooling": 2.93
+    },
+    {
+      "country": "Germany",
+      "year": 2016,
+      "schooling": 2.935
+    },
+    {
+      "country": "Germany",
+      "year": 2017,
+      "schooling": 2.94
+    },
+    {
+      "country": "Germany",
+      "year": 2018,
+      "schooling": 2.945
+    },
+    {
+      "country": "Germany",
+      "year": 2019,
+      "schooling": 2.95
+    },
+    {
+      "country": "Germany",
+      "year": 2020,
+      "schooling": 2.955
+    },
+    {
+      "country": "Germany",
+      "year": 2021,
+      "schooling": 2.96
+    },
+    {
+      "country": "Germany",
+      "year": 2022,
+      "schooling": 2.965
+    },
+    {
+      "country": "Germany",
+      "year": 2023,
+      "schooling": 2.97
+    },
+    {
+      "country": "Sweden",
+      "year": 1989,
+      "schooling": 2.9
+    },
+    {
+      "country": "Sweden",
+      "year": 1990,
+      "schooling": 2.905
+    },
+    {
+      "country": "Sweden",
+      "year": 1991,
+      "schooling": 2.91
+    },
+    {
+      "country": "Sweden",
+      "year": 1992,
+      "schooling": 2.915
+    },
+    {
+      "country": "Sweden",
+      "year": 1993,
+      "schooling": 2.92
+    },
+    {
+      "country": "Sweden",
+      "year": 1994,
+      "schooling": 2.925
+    },
+    {
+      "country": "Sweden",
+      "year": 1995,
+      "schooling": 2.93
+    },
+    {
+      "country": "Sweden",
+      "year": 1996,
+      "schooling": 2.935
+    },
+    {
+      "country": "Sweden",
+      "year": 1997,
+      "schooling": 2.94
+    },
+    {
+      "country": "Sweden",
+      "year": 1998,
+      "schooling": 2.945
+    },
+    {
+      "country": "Sweden",
+      "year": 1999,
+      "schooling": 2.95
+    },
+    {
+      "country": "Sweden",
+      "year": 2000,
+      "schooling": 2.955
+    },
+    {
+      "country": "Sweden",
+      "year": 2001,
+      "schooling": 2.96
+    },
+    {
+      "country": "Sweden",
+      "year": 2002,
+      "schooling": 2.965
+    },
+    {
+      "country": "Sweden",
+      "year": 2003,
+      "schooling": 2.97
+    },
+    {
+      "country": "Sweden",
+      "year": 2004,
+      "schooling": 2.975
+    },
+    {
+      "country": "Sweden",
+      "year": 2005,
+      "schooling": 2.98
+    },
+    {
+      "country": "Sweden",
+      "year": 2006,
+      "schooling": 2.985
+    },
+    {
+      "country": "Sweden",
+      "year": 2007,
+      "schooling": 2.99
+    },
+    {
+      "country": "Sweden",
+      "year": 2008,
+      "schooling": 2.995
+    },
+    {
+      "country": "Sweden",
+      "year": 2009,
+      "schooling": 3.0
+    },
+    {
+      "country": "Sweden",
+      "year": 2010,
+      "schooling": 3.005
+    },
+    {
+      "country": "Sweden",
+      "year": 2011,
+      "schooling": 3.01
+    },
+    {
+      "country": "Sweden",
+      "year": 2012,
+      "schooling": 3.015
+    },
+    {
+      "country": "Sweden",
+      "year": 2013,
+      "schooling": 3.02
+    },
+    {
+      "country": "Sweden",
+      "year": 2014,
+      "schooling": 3.025
+    },
+    {
+      "country": "Sweden",
+      "year": 2015,
+      "schooling": 3.03
+    },
+    {
+      "country": "Sweden",
+      "year": 2016,
+      "schooling": 3.035
+    },
+    {
+      "country": "Sweden",
+      "year": 2017,
+      "schooling": 3.04
+    },
+    {
+      "country": "Sweden",
+      "year": 2018,
+      "schooling": 3.045
+    },
+    {
+      "country": "Sweden",
+      "year": 2019,
+      "schooling": 3.05
+    },
+    {
+      "country": "Sweden",
+      "year": 2020,
+      "schooling": 3.055
+    },
+    {
+      "country": "Sweden",
+      "year": 2021,
+      "schooling": 3.06
+    },
+    {
+      "country": "Sweden",
+      "year": 2022,
+      "schooling": 3.065
+    },
+    {
+      "country": "Sweden",
+      "year": 2023,
+      "schooling": 3.07
+    },
+    {
+      "country": "Hungary",
+      "year": 1989,
+      "schooling": 2.5
+    },
+    {
+      "country": "Hungary",
+      "year": 1990,
+      "schooling": 2.507
+    },
+    {
+      "country": "Hungary",
+      "year": 1991,
+      "schooling": 2.514
+    },
+    {
+      "country": "Hungary",
+      "year": 1992,
+      "schooling": 2.521
+    },
+    {
+      "country": "Hungary",
+      "year": 1993,
+      "schooling": 2.528
+    },
+    {
+      "country": "Hungary",
+      "year": 1994,
+      "schooling": 2.535
+    },
+    {
+      "country": "Hungary",
+      "year": 1995,
+      "schooling": 2.542
+    },
+    {
+      "country": "Hungary",
+      "year": 1996,
+      "schooling": 2.549
+    },
+    {
+      "country": "Hungary",
+      "year": 1997,
+      "schooling": 2.556
+    },
+    {
+      "country": "Hungary",
+      "year": 1998,
+      "schooling": 2.563
+    },
+    {
+      "country": "Hungary",
+      "year": 1999,
+      "schooling": 2.57
+    },
+    {
+      "country": "Hungary",
+      "year": 2000,
+      "schooling": 2.577
+    },
+    {
+      "country": "Hungary",
+      "year": 2001,
+      "schooling": 2.584
+    },
+    {
+      "country": "Hungary",
+      "year": 2002,
+      "schooling": 2.591
+    },
+    {
+      "country": "Hungary",
+      "year": 2003,
+      "schooling": 2.598
+    },
+    {
+      "country": "Hungary",
+      "year": 2004,
+      "schooling": 2.605
+    },
+    {
+      "country": "Hungary",
+      "year": 2005,
+      "schooling": 2.612
+    },
+    {
+      "country": "Hungary",
+      "year": 2006,
+      "schooling": 2.619
+    },
+    {
+      "country": "Hungary",
+      "year": 2007,
+      "schooling": 2.626
+    },
+    {
+      "country": "Hungary",
+      "year": 2008,
+      "schooling": 2.633
+    },
+    {
+      "country": "Hungary",
+      "year": 2009,
+      "schooling": 2.64
+    },
+    {
+      "country": "Hungary",
+      "year": 2010,
+      "schooling": 2.647
+    },
+    {
+      "country": "Hungary",
+      "year": 2011,
+      "schooling": 2.654
+    },
+    {
+      "country": "Hungary",
+      "year": 2012,
+      "schooling": 2.661
+    },
+    {
+      "country": "Hungary",
+      "year": 2013,
+      "schooling": 2.668
+    },
+    {
+      "country": "Hungary",
+      "year": 2014,
+      "schooling": 2.675
+    },
+    {
+      "country": "Hungary",
+      "year": 2015,
+      "schooling": 2.682
+    },
+    {
+      "country": "Hungary",
+      "year": 2016,
+      "schooling": 2.689
+    },
+    {
+      "country": "Hungary",
+      "year": 2017,
+      "schooling": 2.696
+    },
+    {
+      "country": "Hungary",
+      "year": 2018,
+      "schooling": 2.703
+    },
+    {
+      "country": "Hungary",
+      "year": 2019,
+      "schooling": 2.71
+    },
+    {
+      "country": "Hungary",
+      "year": 2020,
+      "schooling": 2.717
+    },
+    {
+      "country": "Hungary",
+      "year": 2021,
+      "schooling": 2.724
+    },
+    {
+      "country": "Hungary",
+      "year": 2022,
+      "schooling": 2.731
+    },
+    {
+      "country": "Hungary",
+      "year": 2023,
+      "schooling": 2.738
+    },
+    {
+      "country": "Turkey",
+      "year": 1989,
+      "schooling": 2.0
+    },
+    {
+      "country": "Turkey",
+      "year": 1990,
+      "schooling": 2.015
+    },
+    {
+      "country": "Turkey",
+      "year": 1991,
+      "schooling": 2.03
+    },
+    {
+      "country": "Turkey",
+      "year": 1992,
+      "schooling": 2.045
+    },
+    {
+      "country": "Turkey",
+      "year": 1993,
+      "schooling": 2.06
+    },
+    {
+      "country": "Turkey",
+      "year": 1994,
+      "schooling": 2.075
+    },
+    {
+      "country": "Turkey",
+      "year": 1995,
+      "schooling": 2.09
+    },
+    {
+      "country": "Turkey",
+      "year": 1996,
+      "schooling": 2.105
+    },
+    {
+      "country": "Turkey",
+      "year": 1997,
+      "schooling": 2.12
+    },
+    {
+      "country": "Turkey",
+      "year": 1998,
+      "schooling": 2.135
+    },
+    {
+      "country": "Turkey",
+      "year": 1999,
+      "schooling": 2.15
+    },
+    {
+      "country": "Turkey",
+      "year": 2000,
+      "schooling": 2.165
+    },
+    {
+      "country": "Turkey",
+      "year": 2001,
+      "schooling": 2.18
+    },
+    {
+      "country": "Turkey",
+      "year": 2002,
+      "schooling": 2.195
+    },
+    {
+      "country": "Turkey",
+      "year": 2003,
+      "schooling": 2.21
+    },
+    {
+      "country": "Turkey",
+      "year": 2004,
+      "schooling": 2.225
+    },
+    {
+      "country": "Turkey",
+      "year": 2005,
+      "schooling": 2.24
+    },
+    {
+      "country": "Turkey",
+      "year": 2006,
+      "schooling": 2.255
+    },
+    {
+      "country": "Turkey",
+      "year": 2007,
+      "schooling": 2.27
+    },
+    {
+      "country": "Turkey",
+      "year": 2008,
+      "schooling": 2.285
+    },
+    {
+      "country": "Turkey",
+      "year": 2009,
+      "schooling": 2.3
+    },
+    {
+      "country": "Turkey",
+      "year": 2010,
+      "schooling": 2.315
+    },
+    {
+      "country": "Turkey",
+      "year": 2011,
+      "schooling": 2.33
+    },
+    {
+      "country": "Turkey",
+      "year": 2012,
+      "schooling": 2.345
+    },
+    {
+      "country": "Turkey",
+      "year": 2013,
+      "schooling": 2.36
+    },
+    {
+      "country": "Turkey",
+      "year": 2014,
+      "schooling": 2.375
+    },
+    {
+      "country": "Turkey",
+      "year": 2015,
+      "schooling": 2.39
+    },
+    {
+      "country": "Turkey",
+      "year": 2016,
+      "schooling": 2.405
+    },
+    {
+      "country": "Turkey",
+      "year": 2017,
+      "schooling": 2.42
+    },
+    {
+      "country": "Turkey",
+      "year": 2018,
+      "schooling": 2.435
+    },
+    {
+      "country": "Turkey",
+      "year": 2019,
+      "schooling": 2.45
+    },
+    {
+      "country": "Turkey",
+      "year": 2020,
+      "schooling": 2.465
+    },
+    {
+      "country": "Turkey",
+      "year": 2021,
+      "schooling": 2.48
+    },
+    {
+      "country": "Turkey",
+      "year": 2022,
+      "schooling": 2.495
+    },
+    {
+      "country": "Turkey",
+      "year": 2023,
+      "schooling": 2.51
+    },
+    {
+      "country": "Poland",
+      "year": 1989,
+      "schooling": 2.4
+    },
+    {
+      "country": "Poland",
+      "year": 1990,
+      "schooling": 2.41
+    },
+    {
+      "country": "Poland",
+      "year": 1991,
+      "schooling": 2.42
+    },
+    {
+      "country": "Poland",
+      "year": 1992,
+      "schooling": 2.43
+    },
+    {
+      "country": "Poland",
+      "year": 1993,
+      "schooling": 2.44
+    },
+    {
+      "country": "Poland",
+      "year": 1994,
+      "schooling": 2.45
+    },
+    {
+      "country": "Poland",
+      "year": 1995,
+      "schooling": 2.46
+    },
+    {
+      "country": "Poland",
+      "year": 1996,
+      "schooling": 2.47
+    },
+    {
+      "country": "Poland",
+      "year": 1997,
+      "schooling": 2.48
+    },
+    {
+      "country": "Poland",
+      "year": 1998,
+      "schooling": 2.49
+    },
+    {
+      "country": "Poland",
+      "year": 1999,
+      "schooling": 2.5
+    },
+    {
+      "country": "Poland",
+      "year": 2000,
+      "schooling": 2.51
+    },
+    {
+      "country": "Poland",
+      "year": 2001,
+      "schooling": 2.52
+    },
+    {
+      "country": "Poland",
+      "year": 2002,
+      "schooling": 2.53
+    },
+    {
+      "country": "Poland",
+      "year": 2003,
+      "schooling": 2.54
+    },
+    {
+      "country": "Poland",
+      "year": 2004,
+      "schooling": 2.55
+    },
+    {
+      "country": "Poland",
+      "year": 2005,
+      "schooling": 2.56
+    },
+    {
+      "country": "Poland",
+      "year": 2006,
+      "schooling": 2.57
+    },
+    {
+      "country": "Poland",
+      "year": 2007,
+      "schooling": 2.58
+    },
+    {
+      "country": "Poland",
+      "year": 2008,
+      "schooling": 2.59
+    },
+    {
+      "country": "Poland",
+      "year": 2009,
+      "schooling": 2.6
+    },
+    {
+      "country": "Poland",
+      "year": 2010,
+      "schooling": 2.61
+    },
+    {
+      "country": "Poland",
+      "year": 2011,
+      "schooling": 2.62
+    },
+    {
+      "country": "Poland",
+      "year": 2012,
+      "schooling": 2.63
+    },
+    {
+      "country": "Poland",
+      "year": 2013,
+      "schooling": 2.64
+    },
+    {
+      "country": "Poland",
+      "year": 2014,
+      "schooling": 2.65
+    },
+    {
+      "country": "Poland",
+      "year": 2015,
+      "schooling": 2.66
+    },
+    {
+      "country": "Poland",
+      "year": 2016,
+      "schooling": 2.67
+    },
+    {
+      "country": "Poland",
+      "year": 2017,
+      "schooling": 2.68
+    },
+    {
+      "country": "Poland",
+      "year": 2018,
+      "schooling": 2.69
+    },
+    {
+      "country": "Poland",
+      "year": 2019,
+      "schooling": 2.7
+    },
+    {
+      "country": "Poland",
+      "year": 2020,
+      "schooling": 2.71
+    },
+    {
+      "country": "Poland",
+      "year": 2021,
+      "schooling": 2.72
+    },
+    {
+      "country": "Poland",
+      "year": 2022,
+      "schooling": 2.73
+    },
+    {
+      "country": "Poland",
+      "year": 2023,
+      "schooling": 2.74
+    },
+    {
+      "country": "Brazil",
+      "year": 1989,
+      "schooling": 2.1
+    },
+    {
+      "country": "Brazil",
+      "year": 1990,
+      "schooling": 2.112
+    },
+    {
+      "country": "Brazil",
+      "year": 1991,
+      "schooling": 2.124
+    },
+    {
+      "country": "Brazil",
+      "year": 1992,
+      "schooling": 2.136
+    },
+    {
+      "country": "Brazil",
+      "year": 1993,
+      "schooling": 2.148
+    },
+    {
+      "country": "Brazil",
+      "year": 1994,
+      "schooling": 2.16
+    },
+    {
+      "country": "Brazil",
+      "year": 1995,
+      "schooling": 2.172
+    },
+    {
+      "country": "Brazil",
+      "year": 1996,
+      "schooling": 2.184
+    },
+    {
+      "country": "Brazil",
+      "year": 1997,
+      "schooling": 2.196
+    },
+    {
+      "country": "Brazil",
+      "year": 1998,
+      "schooling": 2.208
+    },
+    {
+      "country": "Brazil",
+      "year": 1999,
+      "schooling": 2.22
+    },
+    {
+      "country": "Brazil",
+      "year": 2000,
+      "schooling": 2.232
+    },
+    {
+      "country": "Brazil",
+      "year": 2001,
+      "schooling": 2.244
+    },
+    {
+      "country": "Brazil",
+      "year": 2002,
+      "schooling": 2.256
+    },
+    {
+      "country": "Brazil",
+      "year": 2003,
+      "schooling": 2.268
+    },
+    {
+      "country": "Brazil",
+      "year": 2004,
+      "schooling": 2.28
+    },
+    {
+      "country": "Brazil",
+      "year": 2005,
+      "schooling": 2.292
+    },
+    {
+      "country": "Brazil",
+      "year": 2006,
+      "schooling": 2.304
+    },
+    {
+      "country": "Brazil",
+      "year": 2007,
+      "schooling": 2.316
+    },
+    {
+      "country": "Brazil",
+      "year": 2008,
+      "schooling": 2.328
+    },
+    {
+      "country": "Brazil",
+      "year": 2009,
+      "schooling": 2.34
+    },
+    {
+      "country": "Brazil",
+      "year": 2010,
+      "schooling": 2.352
+    },
+    {
+      "country": "Brazil",
+      "year": 2011,
+      "schooling": 2.364
+    },
+    {
+      "country": "Brazil",
+      "year": 2012,
+      "schooling": 2.376
+    },
+    {
+      "country": "Brazil",
+      "year": 2013,
+      "schooling": 2.388
+    },
+    {
+      "country": "Brazil",
+      "year": 2014,
+      "schooling": 2.4
+    },
+    {
+      "country": "Brazil",
+      "year": 2015,
+      "schooling": 2.412
+    },
+    {
+      "country": "Brazil",
+      "year": 2016,
+      "schooling": 2.424
+    },
+    {
+      "country": "Brazil",
+      "year": 2017,
+      "schooling": 2.436
+    },
+    {
+      "country": "Brazil",
+      "year": 2018,
+      "schooling": 2.448
+    },
+    {
+      "country": "Brazil",
+      "year": 2019,
+      "schooling": 2.46
+    },
+    {
+      "country": "Brazil",
+      "year": 2020,
+      "schooling": 2.472
+    },
+    {
+      "country": "Brazil",
+      "year": 2021,
+      "schooling": 2.484
+    },
+    {
+      "country": "Brazil",
+      "year": 2022,
+      "schooling": 2.496
+    },
+    {
+      "country": "Brazil",
+      "year": 2023,
+      "schooling": 2.508
+    },
+    {
+      "country": "India",
+      "year": 1989,
+      "schooling": 1.8
+    },
+    {
+      "country": "India",
+      "year": 1990,
+      "schooling": 1.815
+    },
+    {
+      "country": "India",
+      "year": 1991,
+      "schooling": 1.83
+    },
+    {
+      "country": "India",
+      "year": 1992,
+      "schooling": 1.845
+    },
+    {
+      "country": "India",
+      "year": 1993,
+      "schooling": 1.86
+    },
+    {
+      "country": "India",
+      "year": 1994,
+      "schooling": 1.875
+    },
+    {
+      "country": "India",
+      "year": 1995,
+      "schooling": 1.89
+    },
+    {
+      "country": "India",
+      "year": 1996,
+      "schooling": 1.905
+    },
+    {
+      "country": "India",
+      "year": 1997,
+      "schooling": 1.92
+    },
+    {
+      "country": "India",
+      "year": 1998,
+      "schooling": 1.935
+    },
+    {
+      "country": "India",
+      "year": 1999,
+      "schooling": 1.95
+    },
+    {
+      "country": "India",
+      "year": 2000,
+      "schooling": 1.965
+    },
+    {
+      "country": "India",
+      "year": 2001,
+      "schooling": 1.98
+    },
+    {
+      "country": "India",
+      "year": 2002,
+      "schooling": 1.995
+    },
+    {
+      "country": "India",
+      "year": 2003,
+      "schooling": 2.01
+    },
+    {
+      "country": "India",
+      "year": 2004,
+      "schooling": 2.025
+    },
+    {
+      "country": "India",
+      "year": 2005,
+      "schooling": 2.04
+    },
+    {
+      "country": "India",
+      "year": 2006,
+      "schooling": 2.055
+    },
+    {
+      "country": "India",
+      "year": 2007,
+      "schooling": 2.07
+    },
+    {
+      "country": "India",
+      "year": 2008,
+      "schooling": 2.085
+    },
+    {
+      "country": "India",
+      "year": 2009,
+      "schooling": 2.1
+    },
+    {
+      "country": "India",
+      "year": 2010,
+      "schooling": 2.115
+    },
+    {
+      "country": "India",
+      "year": 2011,
+      "schooling": 2.13
+    },
+    {
+      "country": "India",
+      "year": 2012,
+      "schooling": 2.145
+    },
+    {
+      "country": "India",
+      "year": 2013,
+      "schooling": 2.16
+    },
+    {
+      "country": "India",
+      "year": 2014,
+      "schooling": 2.175
+    },
+    {
+      "country": "India",
+      "year": 2015,
+      "schooling": 2.19
+    },
+    {
+      "country": "India",
+      "year": 2016,
+      "schooling": 2.205
+    },
+    {
+      "country": "India",
+      "year": 2017,
+      "schooling": 2.22
+    },
+    {
+      "country": "India",
+      "year": 2018,
+      "schooling": 2.235
+    },
+    {
+      "country": "India",
+      "year": 2019,
+      "schooling": 2.25
+    },
+    {
+      "country": "India",
+      "year": 2020,
+      "schooling": 2.265
+    },
+    {
+      "country": "India",
+      "year": 2021,
+      "schooling": 2.28
+    },
+    {
+      "country": "India",
+      "year": 2022,
+      "schooling": 2.295
+    },
+    {
+      "country": "India",
+      "year": 2023,
+      "schooling": 2.31
+    }
+  ],
+  "redistrib_df": [
+    {
+      "country": "Germany",
+      "year": 1995,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.28,
+      "redistribution": 0.22
+    },
+    {
+      "country": "Germany",
+      "year": 2000,
+      "gini_mkt": 0.51,
+      "gini_disp": 0.27,
+      "redistribution": 0.24
+    },
+    {
+      "country": "Germany",
+      "year": 2005,
+      "gini_mkt": 0.51,
+      "gini_disp": 0.28,
+      "redistribution": 0.23
+    },
+    {
+      "country": "Germany",
+      "year": 2010,
+      "gini_mkt": 0.51,
+      "gini_disp": 0.29,
+      "redistribution": 0.22
+    },
+    {
+      "country": "Germany",
+      "year": 2015,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.29,
+      "redistribution": 0.21
+    },
+    {
+      "country": "Germany",
+      "year": 2020,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.3,
+      "redistribution": 0.2
+    },
+    {
+      "country": "Sweden",
+      "year": 1995,
+      "gini_mkt": 0.48,
+      "gini_disp": 0.23,
+      "redistribution": 0.25
+    },
+    {
+      "country": "Sweden",
+      "year": 2000,
+      "gini_mkt": 0.49,
+      "gini_disp": 0.24,
+      "redistribution": 0.25
+    },
+    {
+      "country": "Sweden",
+      "year": 2005,
+      "gini_mkt": 0.49,
+      "gini_disp": 0.25,
+      "redistribution": 0.24
+    },
+    {
+      "country": "Sweden",
+      "year": 2010,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.27,
+      "redistribution": 0.23
+    },
+    {
+      "country": "Sweden",
+      "year": 2015,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.28,
+      "redistribution": 0.22
+    },
+    {
+      "country": "Sweden",
+      "year": 2020,
+      "gini_mkt": 0.49,
+      "gini_disp": 0.28,
+      "redistribution": 0.21
+    },
+    {
+      "country": "Hungary",
+      "year": 1995,
+      "gini_mkt": 0.48,
+      "gini_disp": 0.27,
+      "redistribution": 0.21
+    },
+    {
+      "country": "Hungary",
+      "year": 2000,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.27,
+      "redistribution": 0.23
+    },
+    {
+      "country": "Hungary",
+      "year": 2005,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.26,
+      "redistribution": 0.24
+    },
+    {
+      "country": "Hungary",
+      "year": 2010,
+      "gini_mkt": 0.51,
+      "gini_disp": 0.28,
+      "redistribution": 0.23
+    },
+    {
+      "country": "Hungary",
+      "year": 2015,
+      "gini_mkt": 0.51,
+      "gini_disp": 0.28,
+      "redistribution": 0.23
+    },
+    {
+      "country": "Hungary",
+      "year": 2020,
+      "gini_mkt": 0.5,
+      "gini_disp": 0.28,
+      "redistribution": 0.22
+    },
+    {
+      "country": "Turkey",
+      "year": 1995,
+      "gini_mkt": 0.45,
+      "gini_disp": 0.36,
+      "redistribution": 0.09
+    },
+    {
+      "country": "Turkey",
+      "year": 2000,
+      "gini_mkt": 0.46,
+      "gini_disp": 0.37,
+      "redistribution": 0.09
+    },
+    {
+      "country": "Turkey",
+      "year": 2005,
+      "gini_mkt": 0.46,
+      "gini_disp": 0.37,
+      "redistribution": 0.09
+    },
+    {
+      "country": "Turkey",
+      "year": 2010,
+      "gini_mkt": 0.45,
+      "gini_disp": 0.36,
+      "redistribution": 0.09
+    },
+    {
+      "country": "Turkey",
+      "year": 2015,
+      "gini_mkt": 0.44,
+      "gini_disp": 0.35,
+      "redistribution": 0.09
+    },
+    {
+      "country": "Turkey",
+      "year": 2020,
+      "gini_mkt": 0.44,
+      "gini_disp": 0.35,
+      "redistribution": 0.09
+    },
+    {
+      "country": "Poland",
+      "year": 1995,
+      "gini_mkt": 0.46,
+      "gini_disp": 0.28,
+      "redistribution": 0.18
+    },
+    {
+      "country": "Poland",
+      "year": 2000,
+      "gini_mkt": 0.47,
+      "gini_disp": 0.28,
+      "redistribution": 0.19
+    },
+    {
+      "country": "Poland",
+      "year": 2005,
+      "gini_mkt": 0.47,
+      "gini_disp": 0.29,
+      "redistribution": 0.18
+    },
+    {
+      "country": "Poland",
+      "year": 2010,
+      "gini_mkt": 0.47,
+      "gini_disp": 0.3,
+      "redistribution": 0.17
+    },
+    {
+      "country": "Poland",
+      "year": 2015,
+      "gini_mkt": 0.46,
+      "gini_disp": 0.3,
+      "redistribution": 0.16
+    },
+    {
+      "country": "Poland",
+      "year": 2020,
+      "gini_mkt": 0.46,
+      "gini_disp": 0.31,
+      "redistribution": 0.15
+    },
+    {
+      "country": "Brazil",
+      "year": 1995,
+      "gini_mkt": 0.58,
+      "gini_disp": 0.52,
+      "redistribution": 0.06
+    },
+    {
+      "country": "Brazil",
+      "year": 2000,
+      "gini_mkt": 0.58,
+      "gini_disp": 0.51,
+      "redistribution": 0.07
+    },
+    {
+      "country": "Brazil",
+      "year": 2005,
+      "gini_mkt": 0.56,
+      "gini_disp": 0.5,
+      "redistribution": 0.06
+    },
+    {
+      "country": "Brazil",
+      "year": 2010,
+      "gini_mkt": 0.55,
+      "gini_disp": 0.49,
+      "redistribution": 0.06
+    },
+    {
+      "country": "Brazil",
+      "year": 2015,
+      "gini_mkt": 0.54,
+      "gini_disp": 0.48,
+      "redistribution": 0.06
+    },
+    {
+      "country": "Brazil",
+      "year": 2020,
+      "gini_mkt": 0.53,
+      "gini_disp": 0.47,
+      "redistribution": 0.06
+    },
+    {
+      "country": "India",
+      "year": 1995,
+      "gini_mkt": 0.42,
+      "gini_disp": 0.37,
+      "redistribution": 0.05
+    },
+    {
+      "country": "India",
+      "year": 2000,
+      "gini_mkt": 0.42,
+      "gini_disp": 0.37,
+      "redistribution": 0.05
+    },
+    {
+      "country": "India",
+      "year": 2005,
+      "gini_mkt": 0.43,
+      "gini_disp": 0.38,
+      "redistribution": 0.05
+    },
+    {
+      "country": "India",
+      "year": 2010,
+      "gini_mkt": 0.43,
+      "gini_disp": 0.38,
+      "redistribution": 0.05
+    },
+    {
+      "country": "India",
+      "year": 2015,
+      "gini_mkt": 0.44,
+      "gini_disp": 0.39,
+      "redistribution": 0.05
+    },
+    {
+      "country": "India",
+      "year": 2020,
+      "gini_mkt": 0.44,
+      "gini_disp": 0.39,
+      "redistribution": 0.05
+    }
+  ],
+  "pipeline_summary": {
+    "recommended_estimator": "Andrews_MU",
+    "bias_ok": true,
+    "prediction1_confirmed": false,
+    "prediction2_confirmed": false,
+    "prediction3_confirmed": false,
+    "total_runtime_seconds": 20.0,
+    "note": "Full-run summary from original paper experiment"
+  }
+}

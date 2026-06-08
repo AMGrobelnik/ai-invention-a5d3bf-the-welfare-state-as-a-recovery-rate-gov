@@ -1,0 +1,15 @@
+{
+  "kind": "code_demo",
+  "id": "gen_art_dataset_1",
+  "type": "code",
+  "iteration": 1,
+  "title": "Democratic Resilience Panel: V-Dem + SWIID + OWID + ERT + SOCX (1960\u20132023)",
+  "summary": "Country-year panel (11,733 observations, 190 countries, 1960\u20132023) merging V-Dem electoral democracy index (EDI) and liberal democracy index (LDI) sourced from OWID grapher CSV API, ERT gradual-erosion and coup-onset flags, SWIID v7.1 market/net Gini with standard errors (5,226 country-years, 192 countries, 1960\u20132017), OWID Luxembourg Income Study redistribution series, OECD SOCX gross social spending, Penn World Table rgdpe_pc GDP per capita, Lee-Lee/Barro-Lee schooling, and a derived democratic-stock variable (cumulative prior years with EDI \u2265 0.5). Dataset: democratic_resilience_panel.",
+  "original_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_cwMPnTXPkYP7/3_invention_loop/iter_1/gen_art/gen_art_dataset_1",
+  "demo_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_cwMPnTXPkYP7/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_dataset_1",
+  "out_expected_files": {
+    "notebook": "code_demo.ipynb",
+    "mini_data_file": "mini_demo_data.json"
+  },
+  "notebook_path": "/home/adrian/projects/ai-inventor/aii_data/users/admin/runs/run_cwMPnTXPkYP7/4_gen_paper_repo/_3_gen_art_demo/iter_1/gen_art_dataset_1/data_code_demo.ipynb"
+}
