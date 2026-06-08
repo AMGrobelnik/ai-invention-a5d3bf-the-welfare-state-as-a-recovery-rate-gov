@@ -1,0 +1,25 @@
+[project]
+name = "welfare-state-recovery-rate-governor"
+version = "1.0.0"
+requires-python = ">=3.12"
+dependencies = [
+    "certifi==2026.5.20",
+    "charset-normalizer==3.4.7",
+    "idna==3.18",
+    "joblib==1.5.3",
+    "loguru==0.7.3",
+    "narwhals==2.22.1",
+    "numpy==2.4.6",
+    "packaging==26.2",
+    "pandas==3.0.3",
+    "patsy==1.0.2",
+    "psutil==7.2.2",
+    "python-dateutil==2.9.0.post0",
+    "requests==2.34.2",
+    "scikit-learn==1.9.0",
+    "scipy==1.17.1",
+    "six==1.17.0",
+    "statsmodels==0.14.6",
+    "threadpoolctl==3.6.0",
+    "urllib3==2.7.0",
+]

@@ -1,0 +1,1544 @@
+{
+  "metadata": {
+    "method_name": "Welfare State as Recovery-Rate Governor",
+    "description": "Four-step empirical pipeline: MC estimator validation, rolling AR(1) recovery rates, CSD anticipation test, panel regression, hazard model",
+    "total_runtime_seconds": 20.0,
+    "data_sources": [
+      "V-Dem (OWID)",
+      "SWIID or OWID inequality",
+      "algorithmic_from_vdem",
+      "GDP (OWID)",
+      "Schooling (OWID)"
+    ],
+    "estimator_used": "Kilian_BAB",
+    "detrending_method": "Hodrick-Prescott (lambda=6.25 annual)",
+    "window_size": 20,
+    "num_workers": 5
+  },
+  "datasets": [
+    {
+      "dataset": "welfare_state_democracy_pipeline",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"n_recovery_windows\": 44, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.59456, \"std_lambda_bc\": 0.85382}",
+          "metadata_country": "Afghanistan",
+          "metadata_n_windows": 44,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Albania\", \"n_recovery_windows\": 56, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.17184, \"std_lambda_bc\": 1.58357}",
+          "metadata_country": "Albania",
+          "metadata_n_windows": 56,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Algeria\", \"n_recovery_windows\": 86, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.03671, \"std_lambda_bc\": 0.93025}",
+          "metadata_country": "Algeria",
+          "metadata_n_windows": 86,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Angola\", \"n_recovery_windows\": 38, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.05218, \"std_lambda_bc\": 1.3717}",
+          "metadata_country": "Angola",
+          "metadata_n_windows": 38,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Argentina\", \"n_recovery_windows\": 207, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.93545, \"std_lambda_bc\": 1.75255}",
+          "metadata_country": "Argentina",
+          "metadata_n_windows": 207,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Armenia\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Armenia",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Australia\", \"n_recovery_windows\": 67, \"mean_redistribution\": 0.1346, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Australia",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.79037",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Austria\", \"n_recovery_windows\": 88, \"mean_redistribution\": 0.2133, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.91378, \"std_lambda_bc\": 1.87581}",
+          "metadata_country": "Austria",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.92288",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Azerbaijan\", \"n_recovery_windows\": 57, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.13019, \"std_lambda_bc\": 1.32821}",
+          "metadata_country": "Azerbaijan",
+          "metadata_n_windows": 57,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Bangladesh\", \"n_recovery_windows\": 101, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.69628, \"std_lambda_bc\": 1.45376}",
+          "metadata_country": "Bangladesh",
+          "metadata_n_windows": 101,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Barbados\", \"n_recovery_windows\": 71, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.22384, \"std_lambda_bc\": 1.34408}",
+          "metadata_country": "Barbados",
+          "metadata_n_windows": 71,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Belarus\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Belarus",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Belgium\", \"n_recovery_windows\": 177, \"mean_redistribution\": 0.2318, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.49419, \"std_lambda_bc\": 1.25856}",
+          "metadata_country": "Belgium",
+          "metadata_n_windows": 177,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.95414",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Benin\", \"n_recovery_windows\": 88, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.68302, \"std_lambda_bc\": 1.53359}",
+          "metadata_country": "Benin",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Bhutan\", \"n_recovery_windows\": 49, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.31248, \"std_lambda_bc\": 1.38541}",
+          "metadata_country": "Bhutan",
+          "metadata_n_windows": 49,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Bolivia\", \"n_recovery_windows\": 180, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.56344, \"std_lambda_bc\": 1.6075}",
+          "metadata_country": "Bolivia",
+          "metadata_n_windows": 180,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Bosnia and Herzegovina\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.81516, \"std_lambda_bc\": 1.66837}",
+          "metadata_country": "Bosnia and Herzegovina",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Botswana\", \"n_recovery_windows\": 82, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.5142, \"std_lambda_bc\": 1.43219}",
+          "metadata_country": "Botswana",
+          "metadata_n_windows": 82,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Brazil\", \"n_recovery_windows\": 181, \"mean_redistribution\": 0.0691, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.76394, \"std_lambda_bc\": 1.67651}",
+          "metadata_country": "Brazil",
+          "metadata_n_windows": 181,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.68009",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Bulgaria\", \"n_recovery_windows\": 128, \"mean_redistribution\": 0.1266, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.73966, \"std_lambda_bc\": 2.00765}",
+          "metadata_country": "Bulgaria",
+          "metadata_n_windows": 128,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.77687",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Burkina Faso\", \"n_recovery_windows\": 71, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.41301, \"std_lambda_bc\": 1.83655}",
+          "metadata_country": "Burkina Faso",
+          "metadata_n_windows": 71,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Burundi\", \"n_recovery_windows\": 64, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.4443, \"std_lambda_bc\": 1.34414}",
+          "metadata_country": "Burundi",
+          "metadata_n_windows": 64,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Cambodia\", \"n_recovery_windows\": 93, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.82759, \"std_lambda_bc\": 1.55165}",
+          "metadata_country": "Cambodia",
+          "metadata_n_windows": 93,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Canada\", \"n_recovery_windows\": 50, \"mean_redistribution\": 0.1151, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.4159, \"std_lambda_bc\": 1.25761}",
+          "metadata_country": "Canada",
+          "metadata_n_windows": 50,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.75753",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Cape Verde\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Cape Verde",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Central African Republic\", \"n_recovery_windows\": 85, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.92685, \"std_lambda_bc\": 1.35951}",
+          "metadata_country": "Central African Republic",
+          "metadata_n_windows": 85,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Chad\", \"n_recovery_windows\": 85, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.04092, \"std_lambda_bc\": 1.38579}",
+          "metadata_country": "Chad",
+          "metadata_n_windows": 85,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Chile\", \"n_recovery_windows\": 191, \"mean_redistribution\": 0.0357, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.85735, \"std_lambda_bc\": 1.64874}",
+          "metadata_country": "Chile",
+          "metadata_n_windows": 191,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.62376",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Colombia\", \"n_recovery_windows\": 216, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.59584, \"std_lambda_bc\": 1.87079}",
+          "metadata_country": "Colombia",
+          "metadata_n_windows": 216,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Comoros\", \"n_recovery_windows\": 73, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.16674, \"std_lambda_bc\": 1.9572}",
+          "metadata_country": "Comoros",
+          "metadata_n_windows": 73,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Congo\", \"n_recovery_windows\": 90, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.4858, \"std_lambda_bc\": 1.34126}",
+          "metadata_country": "Congo",
+          "metadata_n_windows": 90,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Costa Rica\", \"n_recovery_windows\": 135, \"mean_redistribution\": 0.0496, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 3.4442, \"std_lambda_bc\": 1.81755}",
+          "metadata_country": "Costa Rica",
+          "metadata_n_windows": 135,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.64723",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Cote d'Ivoire\", \"n_recovery_windows\": 88, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.01198, \"std_lambda_bc\": 1.91007}",
+          "metadata_country": "Cote d'Ivoire",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Croatia\", \"n_recovery_windows\": 64, \"mean_redistribution\": 0.1785, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.44068, \"std_lambda_bc\": 1.38088}",
+          "metadata_country": "Croatia",
+          "metadata_n_windows": 64,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.86433",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Cuba\", \"n_recovery_windows\": 146, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.16857, \"std_lambda_bc\": 1.05147}",
+          "metadata_country": "Cuba",
+          "metadata_n_windows": 146,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Cyprus\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Cyprus",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Czechia\", \"n_recovery_windows\": 129, \"mean_redistribution\": 0.193, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.1115, \"std_lambda_bc\": 1.58265}",
+          "metadata_country": "Czechia",
+          "metadata_n_windows": 129,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.88876",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Democratic Republic of Congo\", \"n_recovery_windows\": 88, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.02991, \"std_lambda_bc\": 1.62795}",
+          "metadata_country": "Democratic Republic of Congo",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Democratic Republic of Vietnam\", \"n_recovery_windows\": 12, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.00935, \"std_lambda_bc\": 1.19348}",
+          "metadata_country": "Democratic Republic of Vietnam",
+          "metadata_n_windows": 12,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Denmark\", \"n_recovery_windows\": 111, \"mean_redistribution\": 0.1842, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.14471, \"std_lambda_bc\": 1.2153}",
+          "metadata_country": "Denmark",
+          "metadata_n_windows": 111,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.87397",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Djibouti\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Djibouti",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Dominican Republic\", \"n_recovery_windows\": 181, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.60935, \"std_lambda_bc\": 1.38744}",
+          "metadata_country": "Dominican Republic",
+          "metadata_n_windows": 181,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"East Timor\", \"n_recovery_windows\": 47, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.25594, \"std_lambda_bc\": 1.42459}",
+          "metadata_country": "East Timor",
+          "metadata_n_windows": 47,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Ecuador\", \"n_recovery_windows\": 173, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.13176, \"std_lambda_bc\": 1.18598}",
+          "metadata_country": "Ecuador",
+          "metadata_n_windows": 173,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Egypt\", \"n_recovery_windows\": 109, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.68564, \"std_lambda_bc\": 2.00819}",
+          "metadata_country": "Egypt",
+          "metadata_n_windows": 109,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"El Salvador\", \"n_recovery_windows\": 167, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.99065, \"std_lambda_bc\": 1.80423}",
+          "metadata_country": "El Salvador",
+          "metadata_n_windows": 167,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Equatorial Guinea\", \"n_recovery_windows\": 80, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.08681, \"std_lambda_bc\": 1.11893}",
+          "metadata_country": "Equatorial Guinea",
+          "metadata_n_windows": 80,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Eritrea\", \"n_recovery_windows\": 52, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.47683, \"std_lambda_bc\": 2.20015}",
+          "metadata_country": "Eritrea",
+          "metadata_n_windows": 52,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Estonia\", \"n_recovery_windows\": 129, \"mean_redistribution\": 0.1463, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.5832, \"std_lambda_bc\": 1.67078}",
+          "metadata_country": "Estonia",
+          "metadata_n_windows": 129,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.81008",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Ethiopia\", \"n_recovery_windows\": 61, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.95878, \"std_lambda_bc\": 2.06581}",
+          "metadata_country": "Ethiopia",
+          "metadata_n_windows": 61,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Fiji\", \"n_recovery_windows\": 81, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.73921, \"std_lambda_bc\": 1.35986}",
+          "metadata_country": "Fiji",
+          "metadata_n_windows": 81,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Finland\", \"n_recovery_windows\": 67, \"mean_redistribution\": 0.2287, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Finland",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.94886",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"France\", \"n_recovery_windows\": 179, \"mean_redistribution\": 0.2307, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.44154, \"std_lambda_bc\": 1.3985}",
+          "metadata_country": "France",
+          "metadata_n_windows": 179,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.95223",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Gabon\", \"n_recovery_windows\": 88, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.20976, \"std_lambda_bc\": 1.27957}",
+          "metadata_country": "Gabon",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Gambia\", \"n_recovery_windows\": 86, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.63634, \"std_lambda_bc\": 1.77025}",
+          "metadata_country": "Gambia",
+          "metadata_n_windows": 86,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Georgia\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Georgia",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Germany\", \"n_recovery_windows\": 83, \"mean_redistribution\": 0.2085, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.62081, \"std_lambda_bc\": 1.41877}",
+          "metadata_country": "Germany",
+          "metadata_n_windows": 83,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.91496",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Ghana\", \"n_recovery_windows\": 91, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.45158, \"std_lambda_bc\": 1.2487}",
+          "metadata_country": "Ghana",
+          "metadata_n_windows": 91,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Greece\", \"n_recovery_windows\": 209, \"mean_redistribution\": 0.1972, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.76697, \"std_lambda_bc\": 1.41463}",
+          "metadata_country": "Greece",
+          "metadata_n_windows": 209,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.8959",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Guatemala\", \"n_recovery_windows\": 216, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.35995, \"std_lambda_bc\": 1.61846}",
+          "metadata_country": "Guatemala",
+          "metadata_n_windows": 216,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Guinea\", \"n_recovery_windows\": 90, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.96596, \"std_lambda_bc\": 1.50271}",
+          "metadata_country": "Guinea",
+          "metadata_n_windows": 90,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Guinea-Bissau\", \"n_recovery_windows\": 74, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.34805, \"std_lambda_bc\": 1.91011}",
+          "metadata_country": "Guinea-Bissau",
+          "metadata_n_windows": 74,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Guyana\", \"n_recovery_windows\": 82, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.24456, \"std_lambda_bc\": 1.69634}",
+          "metadata_country": "Guyana",
+          "metadata_n_windows": 82,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Haiti\", \"n_recovery_windows\": 211, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.39425, \"std_lambda_bc\": 1.75219}",
+          "metadata_country": "Haiti",
+          "metadata_n_windows": 211,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Hamburg\", \"n_recovery_windows\": 23, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.165, \"std_lambda_bc\": 1.46968}",
+          "metadata_country": "Hamburg",
+          "metadata_n_windows": 23,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Honduras\", \"n_recovery_windows\": 167, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 3.18478, \"std_lambda_bc\": 1.71599}",
+          "metadata_country": "Honduras",
+          "metadata_n_windows": 167,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Hungary\", \"n_recovery_windows\": 181, \"mean_redistribution\": 0.2106, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.7066, \"std_lambda_bc\": 1.59734}",
+          "metadata_country": "Hungary",
+          "metadata_n_windows": 181,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.9184",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Iceland\", \"n_recovery_windows\": 28, \"mean_redistribution\": 0.1215, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.92509, \"std_lambda_bc\": 0.89999}",
+          "metadata_country": "Iceland",
+          "metadata_n_windows": 28,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.7683",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"India\", \"n_recovery_windows\": 81, \"mean_redistribution\": 0.01, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.04014, \"std_lambda_bc\": 1.91733}",
+          "metadata_country": "India",
+          "metadata_n_windows": 81,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.58044",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Indonesia\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Indonesia",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Iran\", \"n_recovery_windows\": 117, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.96297, \"std_lambda_bc\": 1.8198}",
+          "metadata_country": "Iran",
+          "metadata_n_windows": 117,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Iraq\", \"n_recovery_windows\": 115, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.46671, \"std_lambda_bc\": 1.27702}",
+          "metadata_country": "Iraq",
+          "metadata_n_windows": 115,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Israel\", \"n_recovery_windows\": 67, \"mean_redistribution\": 0.1051, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Israel",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.74066",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Italy\", \"n_recovery_windows\": 163, \"mean_redistribution\": 0.1838, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.52924, \"std_lambda_bc\": 1.46807}",
+          "metadata_country": "Italy",
+          "metadata_n_windows": 163,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.8732",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Jamaica\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Jamaica",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Japan\", \"n_recovery_windows\": 67, \"mean_redistribution\": 0.171, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Japan",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.8517",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Jordan\", \"n_recovery_windows\": 55, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.95228, \"std_lambda_bc\": 2.04854}",
+          "metadata_country": "Jordan",
+          "metadata_n_windows": 55,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Kazakhstan\", \"n_recovery_windows\": 57, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.2852, \"std_lambda_bc\": 1.40584}",
+          "metadata_country": "Kazakhstan",
+          "metadata_n_windows": 57,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Kenya\", \"n_recovery_windows\": 85, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.41828, \"std_lambda_bc\": 1.29058}",
+          "metadata_country": "Kenya",
+          "metadata_n_windows": 85,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Kosovo\", \"n_recovery_windows\": 6, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.79984, \"std_lambda_bc\": 1.9806}",
+          "metadata_country": "Kosovo",
+          "metadata_n_windows": 6,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Kuwait\", \"n_recovery_windows\": 83, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.16175, \"std_lambda_bc\": 1.76797}",
+          "metadata_country": "Kuwait",
+          "metadata_n_windows": 83,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Kyrgyzstan\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Kyrgyzstan",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Laos\", \"n_recovery_windows\": 100, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.09206, \"std_lambda_bc\": 1.67191}",
+          "metadata_country": "Laos",
+          "metadata_n_windows": 100,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Latvia\", \"n_recovery_windows\": 126, \"mean_redistribution\": 0.1326, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.30828, \"std_lambda_bc\": 1.34999}",
+          "metadata_country": "Latvia",
+          "metadata_n_windows": 126,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.78708",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Lebanon\", \"n_recovery_windows\": 86, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.97813, \"std_lambda_bc\": 1.9876}",
+          "metadata_country": "Lebanon",
+          "metadata_n_windows": 86,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Lesotho\", \"n_recovery_windows\": 82, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.28644, \"std_lambda_bc\": 1.24931}",
+          "metadata_country": "Lesotho",
+          "metadata_n_windows": 82,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Liberia\", \"n_recovery_windows\": 119, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.27127, \"std_lambda_bc\": 1.15251}",
+          "metadata_country": "Liberia",
+          "metadata_n_windows": 119,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Libya\", \"n_recovery_windows\": 36, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.18987, \"std_lambda_bc\": 1.71837}",
+          "metadata_country": "Libya",
+          "metadata_n_windows": 36,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Lithuania\", \"n_recovery_windows\": 128, \"mean_redistribution\": 0.1533, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.18709, \"std_lambda_bc\": 1.33402}",
+          "metadata_country": "Lithuania",
+          "metadata_n_windows": 128,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.82181",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Luxembourg\", \"n_recovery_windows\": 69, \"mean_redistribution\": 0.1648, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.0769, \"std_lambda_bc\": 1.19196}",
+          "metadata_country": "Luxembourg",
+          "metadata_n_windows": 69,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.84117",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Madagascar\", \"n_recovery_windows\": 87, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.00306, \"std_lambda_bc\": 1.64413}",
+          "metadata_country": "Madagascar",
+          "metadata_n_windows": 87,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Malawi\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Malawi",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Malaysia\", \"n_recovery_windows\": 84, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.11113, \"std_lambda_bc\": 1.11429}",
+          "metadata_country": "Malaysia",
+          "metadata_n_windows": 84,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Maldives\", \"n_recovery_windows\": 105, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.92202, \"std_lambda_bc\": 1.39313}",
+          "metadata_country": "Maldives",
+          "metadata_n_windows": 105,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Mali\", \"n_recovery_windows\": 88, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.6932, \"std_lambda_bc\": 1.84984}",
+          "metadata_country": "Mali",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Malta\", \"n_recovery_windows\": 87, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.12297, \"std_lambda_bc\": 1.29856}",
+          "metadata_country": "Malta",
+          "metadata_n_windows": 87,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Mauritania\", \"n_recovery_windows\": 90, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.76786, \"std_lambda_bc\": 1.89007}",
+          "metadata_country": "Mauritania",
+          "metadata_n_windows": 90,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Mauritius\", \"n_recovery_windows\": 72, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.12538, \"std_lambda_bc\": 1.21652}",
+          "metadata_country": "Mauritius",
+          "metadata_n_windows": 72,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Mexico\", \"n_recovery_windows\": 153, \"mean_redistribution\": 0.0155, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.70391, \"std_lambda_bc\": 1.86953}",
+          "metadata_country": "Mexico",
+          "metadata_n_windows": 153,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.58971",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Moldova\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Moldova",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Mongolia\", \"n_recovery_windows\": 65, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.5673, \"std_lambda_bc\": 1.0837}",
+          "metadata_country": "Mongolia",
+          "metadata_n_windows": 65,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Montenegro\", \"n_recovery_windows\": 50, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.20174, \"std_lambda_bc\": 1.39761}",
+          "metadata_country": "Montenegro",
+          "metadata_n_windows": 50,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Mozambique\", \"n_recovery_windows\": 54, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.17472, \"std_lambda_bc\": 1.35076}",
+          "metadata_country": "Mozambique",
+          "metadata_n_windows": 54,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Myanmar\", \"n_recovery_windows\": 96, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.08228, \"std_lambda_bc\": 1.49027}",
+          "metadata_country": "Myanmar",
+          "metadata_n_windows": 96,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Namibia\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Namibia",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Nepal\", \"n_recovery_windows\": 89, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.95664, \"std_lambda_bc\": 1.81042}",
+          "metadata_country": "Nepal",
+          "metadata_n_windows": 89,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Netherlands\", \"n_recovery_windows\": 141, \"mean_redistribution\": 0.1492, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.88461, \"std_lambda_bc\": 1.06249}",
+          "metadata_country": "Netherlands",
+          "metadata_n_windows": 141,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.81491",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"New Zealand\", \"n_recovery_windows\": 39, \"mean_redistribution\": 0.1296, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.47042, \"std_lambda_bc\": 1.12989}",
+          "metadata_country": "New Zealand",
+          "metadata_n_windows": 39,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.78195",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Nicaragua\", \"n_recovery_windows\": 166, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.24177, \"std_lambda_bc\": 1.64774}",
+          "metadata_country": "Nicaragua",
+          "metadata_n_windows": 166,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Niger\", \"n_recovery_windows\": 83, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.59006, \"std_lambda_bc\": 1.70551}",
+          "metadata_country": "Niger",
+          "metadata_n_windows": 83,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Nigeria\", \"n_recovery_windows\": 91, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.72465, \"std_lambda_bc\": 1.28939}",
+          "metadata_country": "Nigeria",
+          "metadata_n_windows": 91,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"North Macedonia\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.37622, \"std_lambda_bc\": 1.38208}",
+          "metadata_country": "North Macedonia",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Norway\", \"n_recovery_windows\": 131, \"mean_redistribution\": 0.1624, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.35548, \"std_lambda_bc\": 1.2689}",
+          "metadata_country": "Norway",
+          "metadata_n_windows": 131,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.83727",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Pakistan\", \"n_recovery_windows\": 101, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.89427, \"std_lambda_bc\": 1.4997}",
+          "metadata_country": "Pakistan",
+          "metadata_n_windows": 101,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Palestine/West Bank\", \"n_recovery_windows\": 40, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.98319, \"std_lambda_bc\": 1.31349}",
+          "metadata_country": "Palestine/West Bank",
+          "metadata_n_windows": 40,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Panama\", \"n_recovery_windows\": 102, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.35963, \"std_lambda_bc\": 1.7337}",
+          "metadata_country": "Panama",
+          "metadata_n_windows": 102,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Papua New Guinea\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.91837, \"std_lambda_bc\": 1.0585}",
+          "metadata_country": "Papua New Guinea",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Paraguay\", \"n_recovery_windows\": 173, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.56575, \"std_lambda_bc\": 1.82406}",
+          "metadata_country": "Paraguay",
+          "metadata_n_windows": 173,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Peru\", \"n_recovery_windows\": 216, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.83978, \"std_lambda_bc\": 1.66452}",
+          "metadata_country": "Peru",
+          "metadata_n_windows": 216,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Philippines\", \"n_recovery_windows\": 105, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.24899, \"std_lambda_bc\": 1.86109}",
+          "metadata_country": "Philippines",
+          "metadata_n_windows": 105,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Poland\", \"n_recovery_windows\": 108, \"mean_redistribution\": 0.1686, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.79872, \"std_lambda_bc\": 1.81506}",
+          "metadata_country": "Poland",
+          "metadata_n_windows": 108,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.84766",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Portugal\", \"n_recovery_windows\": 132, \"mean_redistribution\": 0.1882, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.48188, \"std_lambda_bc\": 1.58258}",
+          "metadata_country": "Portugal",
+          "metadata_n_windows": 132,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.88065",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Republic of Vietnam\", \"n_recovery_windows\": 45, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.48789, \"std_lambda_bc\": 0.48042}",
+          "metadata_country": "Republic of Vietnam",
+          "metadata_n_windows": 45,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Romania\", \"n_recovery_windows\": 78, \"mean_redistribution\": 0.1805, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.36748, \"std_lambda_bc\": 1.36177}",
+          "metadata_country": "Romania",
+          "metadata_n_windows": 78,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.86763",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Russia\", \"n_recovery_windows\": 57, \"mean_redistribution\": 0.1137, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.86327, \"std_lambda_bc\": 2.11789}",
+          "metadata_country": "Russia",
+          "metadata_n_windows": 57,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.7551",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Rwanda\", \"n_recovery_windows\": 87, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.86827, \"std_lambda_bc\": 1.43158}",
+          "metadata_country": "Rwanda",
+          "metadata_n_windows": 87,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Sao Tome and Principe\", \"n_recovery_windows\": 73, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.9822, \"std_lambda_bc\": 1.02498}",
+          "metadata_country": "Sao Tome and Principe",
+          "metadata_n_windows": 73,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Senegal\", \"n_recovery_windows\": 67, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.06765, \"std_lambda_bc\": 1.2407}",
+          "metadata_country": "Senegal",
+          "metadata_n_windows": 67,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Serbia\", \"n_recovery_windows\": 133, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.79194, \"std_lambda_bc\": 1.98162}",
+          "metadata_country": "Serbia",
+          "metadata_n_windows": 133,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Seychelles\", \"n_recovery_windows\": 77, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.92927, \"std_lambda_bc\": 1.90364}",
+          "metadata_country": "Seychelles",
+          "metadata_n_windows": 77,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Sierra Leone\", \"n_recovery_windows\": 87, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.72485, \"std_lambda_bc\": 1.40398}",
+          "metadata_country": "Sierra Leone",
+          "metadata_n_windows": 87,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Singapore\", \"n_recovery_windows\": 93, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.57447, \"std_lambda_bc\": 2.06347}",
+          "metadata_country": "Singapore",
+          "metadata_n_windows": 93,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Slovakia\", \"n_recovery_windows\": 175, \"mean_redistribution\": 0.1617, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.72582, \"std_lambda_bc\": 1.54507}",
+          "metadata_country": "Slovakia",
+          "metadata_n_windows": 175,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.8361",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Slovenia\", \"n_recovery_windows\": 130, \"mean_redistribution\": 0.1991, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.45775, \"std_lambda_bc\": 1.70277}",
+          "metadata_country": "Slovenia",
+          "metadata_n_windows": 130,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.89904",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Solomon Islands\", \"n_recovery_windows\": 72, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.98055, \"std_lambda_bc\": 2.17914}",
+          "metadata_country": "Solomon Islands",
+          "metadata_n_windows": 72,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Somalia\", \"n_recovery_windows\": 92, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.7047, \"std_lambda_bc\": 1.31335}",
+          "metadata_country": "Somalia",
+          "metadata_n_windows": 92,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Somaliland\", \"n_recovery_windows\": 54, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.47243, \"std_lambda_bc\": 1.40982}",
+          "metadata_country": "Somaliland",
+          "metadata_n_windows": 54,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"South Africa\", \"n_recovery_windows\": 86, \"mean_redistribution\": 0.0925, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.84356, \"std_lambda_bc\": 1.50228}",
+          "metadata_country": "South Africa",
+          "metadata_n_windows": 86,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.71944",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"South Korea\", \"n_recovery_windows\": 97, \"mean_redistribution\": 0.0508, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.0945, \"std_lambda_bc\": 1.8852}",
+          "metadata_country": "South Korea",
+          "metadata_n_windows": 97,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.6491",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"South Sudan\", \"n_recovery_windows\": 94, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.54861, \"std_lambda_bc\": 1.94084}",
+          "metadata_country": "South Sudan",
+          "metadata_n_windows": 94,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Spain\", \"n_recovery_windows\": 208, \"mean_redistribution\": 0.1681, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.72465, \"std_lambda_bc\": 1.66264}",
+          "metadata_country": "Spain",
+          "metadata_n_windows": 208,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.84675",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Sri Lanka\", \"n_recovery_windows\": 83, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.36687, \"std_lambda_bc\": 1.27525}",
+          "metadata_country": "Sri Lanka",
+          "metadata_n_windows": 83,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Sudan\", \"n_recovery_windows\": 94, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.52469, \"std_lambda_bc\": 1.90619}",
+          "metadata_country": "Sudan",
+          "metadata_n_windows": 94,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Suriname\", \"n_recovery_windows\": 98, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.99359, \"std_lambda_bc\": 1.8096}",
+          "metadata_country": "Suriname",
+          "metadata_n_windows": 98,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Sweden\", \"n_recovery_windows\": 119, \"mean_redistribution\": 0.154, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.14973, \"std_lambda_bc\": 1.27801}",
+          "metadata_country": "Sweden",
+          "metadata_n_windows": 119,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.82306",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Switzerland\", \"n_recovery_windows\": 195, \"mean_redistribution\": 0.0809, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.17572, \"std_lambda_bc\": 1.97777}",
+          "metadata_country": "Switzerland",
+          "metadata_n_windows": 195,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.69985",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Syria\", \"n_recovery_windows\": 103, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.54941, \"std_lambda_bc\": 1.33866}",
+          "metadata_country": "Syria",
+          "metadata_n_windows": 103,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Taiwan\", \"n_recovery_windows\": 52, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.18814, \"std_lambda_bc\": 1.37193}",
+          "metadata_country": "Taiwan",
+          "metadata_n_windows": 52,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Tajikistan\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Tajikistan",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Tanzania\", \"n_recovery_windows\": 86, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.70505, \"std_lambda_bc\": 1.30656}",
+          "metadata_country": "Tanzania",
+          "metadata_n_windows": 86,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Thailand\", \"n_recovery_windows\": 113, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.39914, \"std_lambda_bc\": 1.79395}",
+          "metadata_country": "Thailand",
+          "metadata_n_windows": 113,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Togo\", \"n_recovery_windows\": 88, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.85836, \"std_lambda_bc\": 1.8063}",
+          "metadata_country": "Togo",
+          "metadata_n_windows": 88,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Trinidad and Tobago\", \"n_recovery_windows\": 70, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.38918, \"std_lambda_bc\": 1.59297}",
+          "metadata_country": "Trinidad and Tobago",
+          "metadata_n_windows": 70,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Tunisia\", \"n_recovery_windows\": 89, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.27699, \"std_lambda_bc\": 1.3399}",
+          "metadata_country": "Tunisia",
+          "metadata_n_windows": 89,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Turkey\", \"n_recovery_windows\": 125, \"mean_redistribution\": 0.0631, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.60647, \"std_lambda_bc\": 1.28881}",
+          "metadata_country": "Turkey",
+          "metadata_n_windows": 125,
+          "metadata_has_redistribution": true,
+          "predict_welfare_governor": "1.66989",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Turkmenistan\", \"n_recovery_windows\": 57, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.20709, \"std_lambda_bc\": 1.96193}",
+          "metadata_country": "Turkmenistan",
+          "metadata_n_windows": 57,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Uganda\", \"n_recovery_windows\": 85, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.26338, \"std_lambda_bc\": 0.9689}",
+          "metadata_country": "Uganda",
+          "metadata_n_windows": 85,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Ukraine\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.1224, \"std_lambda_bc\": 1.31784}",
+          "metadata_country": "Ukraine",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Uruguay\", \"n_recovery_windows\": 180, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.1083, \"std_lambda_bc\": 1.70088}",
+          "metadata_country": "Uruguay",
+          "metadata_n_windows": 180,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Uzbekistan\", \"n_recovery_windows\": 58, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.43705, \"std_lambda_bc\": 1.46453}",
+          "metadata_country": "Uzbekistan",
+          "metadata_n_windows": 58,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Vanuatu\", \"n_recovery_windows\": 68, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.56784, \"std_lambda_bc\": 1.94261}",
+          "metadata_country": "Vanuatu",
+          "metadata_n_windows": 68,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Venezuela\", \"n_recovery_windows\": 184, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.79308, \"std_lambda_bc\": 1.57587}",
+          "metadata_country": "Venezuela",
+          "metadata_n_windows": 184,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Vietnam\", \"n_recovery_windows\": 29, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.8718, \"std_lambda_bc\": 1.20138}",
+          "metadata_country": "Vietnam",
+          "metadata_n_windows": 29,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Yemen\", \"n_recovery_windows\": 57, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.63001, \"std_lambda_bc\": 1.62281}",
+          "metadata_country": "Yemen",
+          "metadata_n_windows": 57,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Yemen Arab Republic\", \"n_recovery_windows\": 27, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.56876, \"std_lambda_bc\": 1.45848}",
+          "metadata_country": "Yemen Arab Republic",
+          "metadata_n_windows": 27,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Zambia\", \"n_recovery_windows\": 84, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.92231, \"std_lambda_bc\": 1.64218}",
+          "metadata_country": "Zambia",
+          "metadata_n_windows": 84,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Zanzibar\", \"n_recovery_windows\": 68, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.18473, \"std_lambda_bc\": 1.45631}",
+          "metadata_country": "Zanzibar",
+          "metadata_n_windows": 68,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Zimbabwe\", \"n_recovery_windows\": 105, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.11294, \"std_lambda_bc\": 1.18328}",
+          "metadata_country": "Zimbabwe",
+          "metadata_n_windows": 105,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "Pipeline summary: Monte Carlo estimator validation + CSD anticipation + panel regression + hazard model",
+          "output": "{\"recommended_estimator\": \"Kilian_BAB\", \"bias_ok\": true, \"prediction1_confirmed\": false, \"prediction2_confirmed\": false, \"prediction3_confirmed\": false, \"holm_rejected\": [false, false, false], \"total_runtime_seconds\": 20.0}",
+          "metadata_step": "pipeline_summary",
+          "predict_welfare_governor": "False",
+          "predict_baseline_grand_mean": "False"
+        }
+      ]
+    }
+  ]
+}

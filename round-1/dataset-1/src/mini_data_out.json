@@ -1,0 +1,155 @@
+{
+  "metadata": {
+    "description": "Democratic resilience country-year panel, 1960-2023",
+    "edi_threshold_for_democracy": 0.5,
+    "sources": {
+      "edi_ldi": "V-Dem via OWID grapher CSV (electoral-democracy-index, liberal-democracy-index)",
+      "ert": "V-Dem ERT GitHub raw CSV or OWID ERT table fallback",
+      "redistribution_swiid": "SWIID (Solt 2020) market-net Gini",
+      "redistribution_owid": "Luxembourg Income Study (OWID) market-disposable Gini difference",
+      "gross_socx": "OECD SOCX or OWID long-run social expenditure",
+      "gdp_pc": "OWID GDP historical (Maddison/WB)",
+      "schooling": "Lee-Lee 2016 / Barro-Lee 2018 via OWID"
+    },
+    "coverage": {
+      "edi": {
+        "n_obs": 11733,
+        "n_countries": 190,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "ldi": {
+        "n_obs": 11649,
+        "n_countries": 190,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "redistribution_owid": {
+        "n_obs": 427,
+        "n_countries": 27,
+        "year_range": [
+          1968,
+          2021
+        ]
+      },
+      "redistribution_swiid": {
+        "n_obs": 2119,
+        "n_countries": 67,
+        "year_range": [
+          1975,
+          2017
+        ]
+      },
+      "redistribution_swiid_se": {
+        "n_obs": 2119,
+        "n_countries": 67,
+        "year_range": [
+          1975,
+          2017
+        ]
+      },
+      "gini_market": {
+        "n_obs": 4875,
+        "n_countries": 166,
+        "year_range": [
+          1960,
+          2017
+        ]
+      },
+      "gini_net": {
+        "n_obs": 4875,
+        "n_countries": 166,
+        "year_range": [
+          1960,
+          2017
+        ]
+      },
+      "gross_socx": {
+        "n_obs": 1786,
+        "n_countries": 42,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "gdp_pc": {
+        "n_obs": 9319,
+        "n_countries": 165,
+        "year_range": [
+          1960,
+          2023
+        ]
+      },
+      "schooling": {
+        "n_obs": 5282,
+        "n_countries": 173,
+        "year_range": [
+          1960,
+          2017
+        ]
+      },
+      "ert_onset_gradual": {
+        "n_obs": 59,
+        "n_countries": 47,
+        "year_range": [
+          1966,
+          2023
+        ]
+      },
+      "ert_onset_coup": {
+        "n_obs": 59,
+        "n_countries": 47,
+        "year_range": [
+          1966,
+          2023
+        ]
+      },
+      "democratic_stock": {
+        "n_obs": 11733,
+        "n_countries": 190,
+        "year_range": [
+          1960,
+          2023
+        ]
+      }
+    }
+  },
+  "datasets": [
+    {
+      "dataset": "democratic_resilience_panel",
+      "examples": [
+        {
+          "input": "{\"year\": 1960, \"edi\": 0.082, \"ldi\": 0.066, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": 0.22, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "AFG",
+          "metadata_country_code": "AFG",
+          "metadata_year": 1960,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.082
+        },
+        {
+          "input": "{\"year\": 1961, \"edi\": 0.082, \"ldi\": 0.066, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "AFG",
+          "metadata_country_code": "AFG",
+          "metadata_year": 1961,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.082
+        },
+        {
+          "input": "{\"year\": 1962, \"edi\": 0.082, \"ldi\": 0.066, \"gini_market\": null, \"gini_net\": null, \"redistribution_swiid\": null, \"redistribution_swiid_se\": null, \"redistribution_owid\": null, \"gross_socx\": null, \"gdp_pc\": null, \"schooling\": null, \"ert_onset_gradual\": null, \"ert_onset_coup\": null, \"ert_episode_id\": null, \"democratic_stock\": 0.0}",
+          "output": "AFG",
+          "metadata_country_code": "AFG",
+          "metadata_year": 1962,
+          "metadata_task_type": "panel_data",
+          "metadata_democratic_stock": 0.0,
+          "metadata_edi": 0.082
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "method_name": "Welfare State as Recovery-Rate Governor",
+    "description": "Four-step empirical pipeline: MC estimator validation, rolling AR(1) recovery rates, CSD anticipation test, panel regression, hazard model",
+    "total_runtime_seconds": 20.0,
+    "data_sources": [
+      "V-Dem (OWID)",
+      "SWIID or OWID inequality",
+      "algorithmic_from_vdem",
+      "GDP (OWID)",
+      "Schooling (OWID)"
+    ],
+    "estimator_used": "Kilian_BAB",
+    "detrending_method": "Hodrick-Prescott (lambda=6.25 annual)",
+    "window_size": 20,
+    "num_workers": 5
+  },
+  "datasets": [
+    {
+      "dataset": "welfare_state_democracy_pipeline",
+      "examples": [
+        {
+          "input": "{\"country\": \"Afghanistan\", \"n_recovery_windows\": 44, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 0.59456, \"std_lambda_bc\": 0.85382}",
+          "metadata_country": "Afghanistan",
+          "metadata_n_windows": 44,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Albania\", \"n_recovery_windows\": 56, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 2.17184, \"std_lambda_bc\": 1.58357}",
+          "metadata_country": "Albania",
+          "metadata_n_windows": 56,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        },
+        {
+          "input": "{\"country\": \"Algeria\", \"n_recovery_windows\": 86, \"mean_redistribution\": null, \"grand_mean_lambda_bc\": 1.80378}",
+          "output": "{\"mean_lambda_bc\": 1.03671, \"std_lambda_bc\": 0.93025}",
+          "metadata_country": "Algeria",
+          "metadata_n_windows": 86,
+          "metadata_has_redistribution": false,
+          "predict_welfare_governor": "1.80378",
+          "predict_baseline_grand_mean": "1.80378"
+        }
+      ]
+    }
+  ]
+}

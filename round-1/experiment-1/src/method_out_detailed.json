@@ -1,0 +1,273 @@
+{
+  "step0_montecarlo": {
+    "recommended_estimator": "Kilian_BAB",
+    "bias_ok": true,
+    "estimator_max_bias_at_key_phis": {
+      "OLS": 0.2476,
+      "Andrews_MU": 0.0998,
+      "OU_MLE": 0.2477,
+      "Kilian_BAB": 0.0439
+    },
+    "notes": "OLS bias at phi=0.90,T=20: -0.230; Recommended estimator: Kilian_BAB (max|bias|=0.044); Andrews MU |bias| at phi=0.99,T=20: 0.100 (exact theory valid through phi=1)"
+  },
+  "step0_mc_results_sample": [
+    {
+      "phi_true": 0.7,
+      "T": 20,
+      "estimator": "OLS",
+      "bias": -0.18822,
+      "rmse": 0.28385,
+      "ci_width_95": 0.80921,
+      "mean_est": 0.51178
+    },
+    {
+      "phi_true": 0.7,
+      "T": 20,
+      "estimator": "Andrews_MU",
+      "bias": -0.02485,
+      "rmse": 0.24781,
+      "ci_width_95": 0.89665,
+      "mean_est": 0.67515
+    },
+    {
+      "phi_true": 0.7,
+      "T": 20,
+      "estimator": "OU_MLE",
+      "bias": -0.18658,
+      "rmse": 0.27927,
+      "ci_width_95": 0.80909,
+      "mean_est": 0.51342
+    },
+    {
+      "phi_true": 0.7,
+      "T": 20,
+      "estimator": "Kilian_BAB",
+      "bias": 0.08789,
+      "rmse": 0.26809,
+      "ci_width_95": 0.81194,
+      "mean_est": 0.78789,
+      "n_sim_kilian": 200
+    },
+    {
+      "phi_true": 0.7,
+      "T": 15,
+      "estimator": "OLS",
+      "bias": -0.23401,
+      "rmse": 0.34022,
+      "ci_width_95": 0.9343,
+      "mean_est": 0.46599
+    },
+    {
+      "phi_true": 0.7,
+      "T": 15,
+      "estimator": "Andrews_MU",
+      "bias": -0.01845,
+      "rmse": 0.28948,
+      "ci_width_95": 0.95667,
+      "mean_est": 0.68155
+    },
+    {
+      "phi_true": 0.7,
+      "T": 15,
+      "estimator": "OU_MLE",
+      "bias": -0.23053,
+      "rmse": 0.33222,
+      "ci_width_95": 0.87968,
+      "mean_est": 0.46947
+    },
+    {
+      "phi_true": 0.7,
+      "T": 15,
+      "estimator": "Kilian_BAB",
+      "bias": 0.05781,
+      "rmse": 0.30348,
+      "ci_width_95": 1.0557,
+      "mean_est": 0.75781,
+      "n_sim_kilian": 200
+    },
+    {
+      "phi_true": 0.7,
+      "T": 25,
+      "estimator": "OLS",
+      "bias": -0.13332,
+      "rmse": 0.23095,
+      "ci_width_95": 0.76052,
+      "mean_est": 0.56668
+    }
+  ],
+  "step1_recovery_rates": {
+    "n_countries": 168,
+    "n_country_years": 16025,
+    "sample_rows": [
+      {
+        "country": "Albania",
+        "center_year": 1924,
+        "phi_bc": 0.01,
+        "lambda_bc": 4.60517,
+        "lambda_lo": 0.0,
+        "lambda_hi": 48.42772,
+        "ac1_rolling": -0.06759,
+        "var_rolling": 0.03439376,
+        "n_obs_window": 20
+      },
+      {
+        "country": "Albania",
+        "center_year": 1925,
+        "phi_bc": 0.01,
+        "lambda_bc": 4.60517,
+        "lambda_lo": 0.0,
+        "lambda_hi": 48.42772,
+        "ac1_rolling": -0.06598,
+        "var_rolling": 0.03432973,
+        "n_obs_window": 20
+      },
+      {
+        "country": "Albania",
+        "center_year": 1926,
+        "phi_bc": 0.01,
+        "lambda_bc": 4.60517,
+        "lambda_lo": 0.0,
+        "lambda_hi": 48.42772,
+        "ac1_rolling": -0.06388,
+        "var_rolling": 0.03479163,
+        "n_obs_window": 20
+      },
+      {
+        "country": "Albania",
+        "center_year": 1927,
+        "phi_bc": 0.01,
+        "lambda_bc": 4.60517,
+        "lambda_lo": 0.0,
+        "lambda_hi": 48.42772,
+        "ac1_rolling": -0.07354,
+        "var_rolling": 0.03587751,
+        "n_obs_window": 20
+      },
+      {
+        "country": "Albania",
+        "center_year": 1928,
+        "phi_bc": 0.01,
+        "lambda_bc": 4.60517,
+        "lambda_lo": 0.0,
+        "lambda_hi": 48.42772,
+        "ac1_rolling": -0.03921,
+        "var_rolling": 0.03557631,
+        "n_obs_window": 20
+      }
+    ],
+    "signal_above_noise": true,
+    "lambda_mean": 1.8038,
+    "lambda_std": 1.6522
+  },
+  "step2_csd_anticipation": {
+    "n_gradual_onsets": 7,
+    "n_coup_onsets": 110,
+    "n_cases_with_data": 5,
+    "n_controls": 15,
+    "mean_kendall_tau_ac1_cases": 0.1746,
+    "mean_kendall_tau_ac1_controls": 0.0667,
+    "p_wilcoxon": 0.3451,
+    "auc": 0.5667,
+    "p_reversed_time_placebo": 0.8545,
+    "p_first_diff_placebo": 0.9827,
+    "prediction1_confirmed": false
+  },
+  "step3_rate_regression": {
+    "n_obs": 111,
+    "n_countries": 17,
+    "coeff_redistribution_lag5": 1.68483,
+    "se_redistribution_lag5": 1.43247,
+    "p_redistribution_lag5": 0.2395,
+    "r2": 0.0422,
+    "granger_fraction_p10": 0.429,
+    "prediction2_confirmed": false,
+    "dissociation_confirmed": false
+  },
+  "step3_all_models": {
+    "mod1_primary": {
+      "formula": "lambda_bc ~ redistribution_lag5 + log_gdp_lag5 + schooling_lag5 + gini_disp + C(region) + C(decade)",
+      "n_obs": 111,
+      "n_countries": 17,
+      "coeff_redistribution_lag5": 1.68483,
+      "se_redistribution_lag5": 1.43247,
+      "p_redistribution_lag5": 0.2395,
+      "r2": 0.0422,
+      "r2_adj": -0.0431
+    },
+    "mod3_level": {
+      "formula": "ac1_rolling ~ redistribution_lag5 + log_gdp_lag5 + schooling_lag5 + gini_disp + C(region) + C(decade)",
+      "n_obs": 111,
+      "coeff_redistribution_lag5": -0.51527,
+      "p_redistribution_lag5": 0.4299,
+      "r2": 0.0499
+    },
+    "mod_fe": {
+      "formula": "lambda_bc ~ redistribution_lag5 + log_gdp_lag5 + schooling_lag5 + gini_disp + C(country)",
+      "n_obs": 111,
+      "coeff_redistribution_lag5": 9.04408,
+      "se_redistribution_lag5": 9.84363,
+      "p_redistribution_lag5": 0.3582,
+      "r2": 0.1876
+    },
+    "mod_robustness_lag3": {
+      "coeff_redistribution": 2.21813,
+      "p_redistribution": 0.1019,
+      "n_obs": 147
+    },
+    "mod_robustness_lag7": {
+      "coeff_redistribution": 0.6548,
+      "p_redistribution": 0.7057,
+      "n_obs": 78
+    }
+  },
+  "step4_hazard": {
+    "n_spells": 11055,
+    "n_onsets": 5,
+    "n_spells_model": 0,
+    "n_onsets_model": 0,
+    "coeff_interaction": null,
+    "p_interaction": 1.0,
+    "direction": "Not confirmed",
+    "marginal_effects": {},
+    "cloglog": {},
+    "prediction3_confirmed": false
+  },
+  "holm_correction": {
+    "p_values_raw": [
+      0.2395,
+      0.3451,
+      1.0
+    ],
+    "p_values_adjusted": [
+      0.7185,
+      0.7185,
+      1.0
+    ],
+    "rejected": [
+      false,
+      false,
+      false
+    ],
+    "labels": [
+      "Pred2_redistrib_coeff",
+      "Pred1_csd_auc",
+      "Pred3_interaction"
+    ]
+  },
+  "metadata": {
+    "method_name": "Welfare State as Recovery-Rate Governor",
+    "description": "Four-step empirical pipeline: MC estimator validation, rolling AR(1) recovery rates, CSD anticipation test, panel regression, hazard model",
+    "total_runtime_seconds": 20.0,
+    "data_sources": [
+      "V-Dem (OWID)",
+      "SWIID or OWID inequality",
+      "algorithmic_from_vdem",
+      "GDP (OWID)",
+      "Schooling (OWID)"
+    ],
+    "estimator_used": "Kilian_BAB",
+    "detrending_method": "Hodrick-Prescott (lambda=6.25 annual)",
+    "window_size": 20,
+    "num_workers": 5
+  }
+}

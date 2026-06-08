@@ -1,0 +1,29 @@
+{
+  "title": "Democratic Resilience Panel: V-Dem + SWIID + OWID + ERT + SOCX (1960–2023)",
+  "layman_summary": "190-country panel (1960–2023) linking democracy scores, inequality, social spending, and GDP to study what makes democracies survive or collapse.",
+  "summary": "Country-year panel (11,733 observations, 190 countries, 1960–2023) merging V-Dem electoral democracy index (EDI) and liberal democracy index (LDI) sourced from OWID grapher CSV API, ERT gradual-erosion and coup-onset flags, SWIID v7.1 market/net Gini with standard errors (5,226 country-years, 192 countries, 1960–2017), OWID Luxembourg Income Study redistribution series, OECD SOCX gross social spending, Penn World Table rgdpe_pc GDP per capita, Lee-Lee/Barro-Lee schooling, and a derived democratic-stock variable (cumulative prior years with EDI ≥ 0.5). Dataset: democratic_resilience_panel.",
+  "out_expected_files": {
+    "script": "data.py",
+    "datasets": [
+      {
+        "full": ["full_data_out.json"],
+        "mini": "mini_data_out.json",
+        "preview": "preview_data_out.json"
+      }
+    ]
+  },
+  "dataset_name": "democratic_resilience_panel",
+  "n_examples": 11733,
+  "n_countries": 190,
+  "year_range": [1960, 2023],
+  "full_data_out_size_mb": 7.1,
+  "sources": [
+    "V-Dem via OWID grapher CSV (electoral-democracy-index, liberal-democracy-index)",
+    "V-Dem ERT GitHub raw CSV or OWID ERT table fallback",
+    "SWIID v7.1 (Solt 2020) via GitHub zipball (fsolt/swiid v9.6 tag)",
+    "OWID Luxembourg Income Study redistribution series",
+    "OECD SOCX or OWID long-run social expenditure",
+    "Penn World Table rgdpe_pc via OWID GGDC table",
+    "Lee-Lee 2016 / Barro-Lee 2018 schooling via OWID"
+  ]
+}
